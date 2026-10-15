@@ -111,6 +111,7 @@
     const tags = element('div', undefined, 'tag-row');
     tags.append(element('span', settings.release_types[item.release_type]));
     if (item.version) tags.append(element('span', item.version));
+    if (!item.version) (item.keywords || []).filter(word => /\d/.test(word)).slice(0, 4).forEach(word => tags.append(element('span', word)));
     if (item.revision_count) tags.append(element('span', `已修訂 ${item.revision_count} 次`));
     const button = element('button', personal.bookmarks.includes(item.id) ? '★ 已收藏' : '☆ 收藏', 'bookmark-button');
     button.type = 'button'; button.setAttribute('aria-pressed', String(personal.bookmarks.includes(item.id))); button.setAttribute('aria-label', `收藏：${item.title}`);
@@ -131,7 +132,7 @@
     const bookmarks = $('#bookmarks-only').checked;
     const cutoff = Date.now() - Number(range) * 86400000;
     const matches = radar.items.filter(item => (!category || item.category === category) && (!product || item.source_id === product) && (!type || item.release_type === type) &&
-      (!bookmarks || personal.bookmarks.includes(item.id)) && (!query || `${item.product} ${item.title} ${item.excerpt} ${item.version || ''}`.toLocaleLowerCase().includes(query)) &&
+      (!bookmarks || personal.bookmarks.includes(item.id)) && (!query || `${item.product} ${item.title} ${item.excerpt} ${item.version || ''} ${(item.keywords || []).join(' ')}`.toLocaleLowerCase().includes(query)) &&
       (range === 'all' || (range === 'undated' ? !item.published_at : item.published_at && new Date(item.published_at).getTime() >= cutoff)));
     $('#news-list').replaceChildren(...matches.slice(0, limit).map(newsCard));
     if (!matches.length) $('#news-list').append(element('p', '沒有符合條件的消息。可調整篩選，或查看來源健康狀態。', 'empty-state'));

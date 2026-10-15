@@ -151,6 +151,7 @@ def make_item(source, identity, title, url, published, body="", version=None, re
     release_type = release_type or classify(title, body)
     normalized = {"title": title, "url": url, "published_at": published,
                   "source_body_hash": hashlib.sha256(plain(body).encode()).hexdigest(),
+                  "keywords": sorted(set(re.findall(r"\b(?:gpt|chat|claude|gemini|deepseek|qwen|llama|gemma|mistral|whisper)[\w.-]*\b", plain(body).lower())))[:60],
                   "excerpt": excerpt(body), "version": version, "release_type": release_type}
     return {"id": source["id"] + ":" + str(identity), "source_id": source["id"],
             "product": source["product"], "category": source["category"], **normalized,
@@ -243,11 +244,12 @@ def dated_heading(text):
 
 
 def parse_markdown_changelog(source, body):
-    records, chunks, date, year = [], [], None, None
+    buckets, chunks, date, year = {}, [], None, None
     def flush():
         if date and chunks:
             text = plain(" ".join(chunks))
-            records.append(make_item(source, date.strftime("%Y-%m-%d"), text[:130], source["url"], stamp(date), text))
+            bucket = buckets.setdefault(date.strftime("%Y-%m-%d"), {"date":date,"texts":[]})
+            bucket["texts"].append(text)
     for line in body.splitlines():
         text = re.sub(r"^#+\s*", "", line).strip()
         month = re.fullmatch(r"[A-Z][a-z]+,? (20\d{2})", text)
@@ -264,13 +266,10 @@ def parse_markdown_changelog(source, body):
         elif date and text and text != "---":
             chunks.append(text)
     flush()
-    if not records:
+    if not buckets:
         raise ValueError("No dated Markdown entries found; source format requires review")
-    merged = {}
-    for record in records:
-        if record["id"] not in merged:
-            merged[record["id"]] = record
-    return list(merged.values())
+    return [make_item(source, identity, bucket["texts"][0][:130], source["url"], stamp(bucket["date"]), " ".join(bucket["texts"]))
+            for identity, bucket in buckets.items()]
 
 
 def parse_changelog(source, body):
@@ -280,7 +279,7 @@ def parse_changelog(source, body):
     containers = [n for n in doc.root.walk() if n.tag in {"main", "article"}]
     container = max(containers, key=lambda n: len(n.text()), default=doc.root)
     nodes = list(container.walk())
-    records, current, chunks, heading_id = [], None, [], None
+    buckets, current, chunks, heading_id = {}, None, [], None
     year = None
 
     def flush():
@@ -289,7 +288,8 @@ def parse_changelog(source, body):
             # A single day may contain several announcements; keep one dated digest.
             identity = current.strftime("%Y-%m-%d")
             url = source["url"] + ("#" + heading_id if heading_id else "")
-            records.append(make_item(source, identity, text[:130], url, stamp(current), text))
+            bucket = buckets.setdefault(identity, {"date":current,"url":url,"texts":[]})
+            bucket["texts"].append(text)
 
     for node in nodes:
         if re.fullmatch(r"h[1-6]", node.tag):
@@ -317,14 +317,10 @@ def parse_changelog(source, body):
             if text:
                 chunks.append(text)
     flush()
-    if not records:
+    if not buckets:
         raise ValueError("No dated changelog entries found; parser requires review")
-    # Multiple headings can share a date; merge without unstable positional identifiers.
-    merged = {}
-    for record in records:
-        if record["id"] not in merged:
-            merged[record["id"]] = record
-    return list(merged.values())
+    return [make_item(source, identity, bucket["texts"][0][:130], bucket["url"], stamp(bucket["date"]), " ".join(bucket["texts"]))
+            for identity, bucket in buckets.items()]
 
 
 def fetch_source(source, now, fetch=http_get, token=None):
@@ -355,6 +351,12 @@ def merge_items(old, incoming, now):
         prior = merged.get(fresh["id"])
         if prior:
             if prior["content_hash"] == fresh["content_hash"]:
+                continue
+            material = ("title", "url", "published_at", "version", "release_type", "source_body_hash")
+            if all(prior.get(key) == fresh.get(key) for key in material):
+                # Metadata enrichment is not an upstream content revision.
+                merged[fresh["id"]] = {**fresh, "first_seen_at":prior["first_seen_at"],
+                                        "updated_at":prior["updated_at"], "revision_count":prior.get("revision_count",0)}
                 continue
             item = {**fresh, "first_seen_at": prior["first_seen_at"], "updated_at": stamp(now),
                     "revision_count": prior.get("revision_count", 0) + 1}

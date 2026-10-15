@@ -97,6 +97,15 @@ class CollectorTests(unittest.TestCase):
         parsed = parse_changelog(source, body)
         self.assertEqual([x["published_at"][:10] for x in parsed], ["2026-10-08","2026-10-07","2026-09-29"])
 
+    def test_same_day_announcements_are_all_retained_for_search_and_hashing(self):
+        source = {**SOURCE,"parser":"openai","url":"https://developers.openai.com/api/docs/changelog"}
+        body = '# Changelog\n### October, 2026\nOct 8\nFeature\nAdded a tool.\nOct 8\nFeature\nReleased gpt-6.1-sol.'
+        parsed = parse_changelog(source, body)
+        self.assertEqual(len(parsed), 1)
+        self.assertIn("gpt-6.1-sol", parsed[0]["keywords"])
+        changed = parse_changelog(source, body.replace("gpt-6.1-sol", "gpt-6-astra"))
+        self.assertNotEqual(parsed[0]["content_hash"], changed[0]["content_hash"])
+
     def test_redirect_strips_token_on_host_change(self):
         import urllib.request
         request = urllib.request.Request("https://api.github.com/repos/x/y", headers={"Authorization":"Bearer test-token"})

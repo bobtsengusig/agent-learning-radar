@@ -8,7 +8,7 @@
 - 產品／分類／類型／日期／關鍵字篩選、收藏、進度保存、JSON 備份及 RSS。
 - 純靜態前端與 Python 3.12 標準函式庫。收集、測試、建置均不需付費 LLM API、套件安裝或第三方資料庫。
 
-預定網站：<https://bobtsengusig.github.io/agent-learning-radar/>  
+網站：<https://bobtsengusig.github.io/agent-learning-radar/>  
 RSS：<https://bobtsengusig.github.io/agent-learning-radar/feed.xml>
 
 ## 本機使用
@@ -61,10 +61,11 @@ RSS 的每個 item 對應一份週報，GUID 為固定週次；修訂週報不�
 - `atom`：RSS／Atom 官方發布消息。
 - `changelog`：官方日期標題頁。OpenAI 使用其官方 `.md` 版本；Claude、Gemini 解析 HTML 日期標題。原文連結仍指向可閱讀的官方更新頁。
 
-每則消息包含 `id`、`source_id`、`product`、`category`、`title`、`url`、`version`、`release_type`、`published_at`、`first_seen_at`、`updated_at`、`revision_count`、`excerpt`、`source_body_hash` 及 `content_hash`。
+每則消息包含 `id`、`source_id`、`product`、`category`、`title`、`url`、`version`、`release_type`、`published_at`、`first_seen_at`、`updated_at`、`revision_count`、`excerpt`、`keywords`、`source_body_hash` 及 `content_hash`。
 
 - 穩定 ID 由來源與官方 release ID、feed ID 或日期組成。相同 ID 的修訂更新既有紀錄；首次發現時間保留。
 - HTML 更新頁以「同日消息彙整」為一筆，不保證每個功能獨立成一筆。日期缺失保存為 `null`。
+- 同日多則公告全部納入變更雜湊，模型識別碼亦納入 `keywords`，讓短摘錄以外的模型更新仍可搜尋。增加搜尋 metadata 不計為官方來源修訂。
 - `source_body_hash` 使用完整標準化來源文字計算，仍可辨識短摘錄以外的修訂；不保存完整文章內容。
 - 短摘錄最多 24 個空白分隔詞、180 字元，附原始連結。以原文為準，沒有 AI 翻譯或影響分析。
 - 首次收集涵蓋執行時往前 90 日中可取得的消息；之後保留已收集歷史。來源可能只保留部分消息，達分頁上限會在涵蓋範圍註明。這不是完整年度新聞資料庫。
