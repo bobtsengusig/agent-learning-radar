@@ -52,7 +52,7 @@
       anchor.classList.toggle('active', active);
       if (active) anchor.setAttribute('aria-current', 'page'); else anchor.removeAttribute('aria-current');
     });
-    if (fragment.startsWith('week-')) requestAnimationFrame(() => document.getElementById(fragment)?.scrollIntoView({ block: 'start' }));
+    if (fragment.startsWith('week-') || panels.has(fragment)) requestAnimationFrame(() => document.getElementById(fragment)?.scrollIntoView({ block: 'start' }));
   }
   window.addEventListener('hashchange', showPanel);
   showPanel();

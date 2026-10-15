@@ -30,7 +30,7 @@ def week_card(week):
     refs = "".join(link(url, title) for title, url in week["refs"])
     return f'''<article class="week-card" id="week-{num}" data-week="{num}">
       <div class="week-top"><span class="eyebrow">WEEK {num:02d} <span>／{esc(week['phase'])}</span></span>
-      <label class="complete-label"><input type="checkbox" data-complete="{num}"><span>已完成</span></label></div>
+      <label class="complete-label"><input type="checkbox" data-complete="{num}" aria-label="第 {num} 週已完成"><span>已完成</span></label></div>
       <h3>{esc(week['title'])}</h3><p class="muted">{esc(week['subtitle'])}</p>
       <p class="week-goal">{esc(week['goal'])}</p>
       <div class="deliverable"><span>本週成果</span>{esc(week['deliverable'])}</div>
