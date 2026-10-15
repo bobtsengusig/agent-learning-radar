@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="第 {{WEEK}} 週：{{TITLE}}。概念教學、可執行 Python 範例、練習解答與研究助理實作。">
+  <meta name="theme-color" content="#112a2b">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
+  <title>第 {{WEEK}} 週 · {{TITLE}} | Agent Learning Radar</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml"><link rel="canonical" href="{{CANONICAL}}">
+  <link rel="stylesheet" href="../../style.css"><link rel="stylesheet" href="../../lesson.css">
+  <script src="../../lesson.js" defer></script>
+</head>
+<body class="lesson-page" data-week="{{WEEK}}">
+<a class="skip-link" href="#main">跳至教學內容</a>
+<header class="site-header"><a class="brand" href="../../"><img src="../../favicon.svg" alt="" width="32" height="32"><span>Agent<span class="brand-light"> Learning Radar</span></span></a><a class="github-link" href="../../#roadmap">12 週總覽 ↗</a></header>
+<main id="main">
+  <nav class="breadcrumbs" aria-label="麵包屑"><a href="../../#roadmap">學習路線</a><span aria-hidden="true">／</span><span>第 {{WEEK}} 週</span></nav>
+  <header class="lesson-hero"><div class="lesson-hero-copy"><span class="eyebrow">WEEK {{WEEK_PAD}} ／ {{PHASE}}</span><h1>{{TITLE}}</h1><p class="lesson-subtitle">{{SUBTITLE}}</p><p>{{INTRO}}</p><div class="lesson-meta"><span>每週 6–8 小時</span><span>Python 3.12+</span><span>內含離線練習</span></div></div><div class="lesson-week" aria-hidden="true">{{WEEK_PAD}}<small>LEARN · BUILD · VERIFY</small></div></header>
+  <div class="lesson-layout">
+    <aside class="lesson-sidebar"><nav class="lesson-toc" aria-label="本頁目錄"><span class="eyebrow">本週教學</span><a href="#before">開始之前</a><a href="#concepts">概念解說</a><a href="#lab">動手實作</a><a href="#integration">延伸串接</a><a href="#exercises">練習與解答</a><a href="#quiz">自我檢查</a><a href="#project">本週交付</a><a href="#references">官方教材</a></nav><details class="course-directory"><summary>全部 12 週課程 ＋</summary><nav aria-label="各週教學頁面">{{DIRECTORY}}</nav></details></aside>
+    <div class="lesson-content">
+      <section id="before" class="tutorial-section"><span class="eyebrow">START HERE</span><h2>開始之前</h2><p class="lesson-objective">{{GOAL}}</p><h3>你需要準備</h3>{{PREREQUISITES}}<div class="time-plan"><div><b>閱讀 2h</b><span>理解概念，讀官方文件</span></div><div><b>實作 3–4h</b><span>跑範例，接回研究助理</span></div><div><b>驗證 1–2h</b><span>做練習，記錄失敗案例</span></div></div><p class="learning-note">本頁可完整閱讀，不需要登入。離線練習不需要金鑰、網路或額外套件；選做串接另列依賴與成本。先保留可運作的版本，再一次改一個條件。</p></section>
+      <section id="concepts" class="tutorial-section"><span class="eyebrow">UNDERSTAND</span><h2>先理解，再動手</h2>{{CONCEPTS}}</section>
+      <section id="lab" class="tutorial-section"><span class="eyebrow">BUILD</span><h2>動手實作：可直接執行的練習</h2><div class="lab-intro"><p>下載檔案，在檔案所在資料夾開啟終端機，執行 <code>{{COMMAND}}</code>。Windows 也可把 python 換成 py -3.12。</p><a class="lesson-button" href="./{{LAB_FILE}}" download>下載 {{LAB_FILE}} ↓</a></div><h3>操作步驟</h3>{{WALKTHROUGH}}{{LAB_CODE}}<div class="expected"><h3>你應該看到什麼？</h3>{{EXPECTED}}<p>範例內含 assert 檢查。若執行出現 AssertionError，先比對你修改過的條件；不要直接刪除檢查讓程式通過。</p></div></section>
+      <section id="integration" class="tutorial-section"><span class="eyebrow">CONNECT</span><h2>{{INTEGRATION_TITLE}}</h2><p class="learning-note">選做串接。範例按官方文件編寫；自動測試檢查語法，未使用付費模型做線上驗證。套件介面可能改變，安裝時請記錄版本並對照下方官方教材。</p>{{INTEGRATION_BODY}}{{INTEGRATION_CODE}}</section>
+      <section id="exercises" class="tutorial-section"><span class="eyebrow">PRACTICE</span><h2>試著自己完成</h2><p>先動手修改，再展開提示或參考解法。把實際結果與原因寫進自己的學習筆記。</p>{{EXERCISES}}</section>
+      <section id="quiz" class="tutorial-section"><span class="eyebrow">CHECK YOUR UNDERSTANDING</span><h2>不看程式，你能解釋嗎？</h2>{{QUIZ}}</section>
+      <section id="project" class="tutorial-section"><span class="eyebrow">SHIP THIS WEEK</span><h2>接回你的研究助理</h2><div class="project-output"><span>本週成果</span><h3>{{DELIVERABLE}}</h3><p>{{TRANSFER}}</p></div><h3>實作順序</h3>{{PROJECT_STEPS}}<h3>完成條件</h3>{{ACCEPTANCE}}<h3>常見失敗</h3>{{PITFALLS}}<div class="lesson-completion"><label><input type="checkbox" id="lesson-complete" disabled>我已完成第 {{WEEK}} 週實作與驗收</label><p id="lesson-progress" role="status" aria-live="polite">進度保存需啟用 JavaScript；教材可直接閱讀。</p><a href="../../#roadmap">回總覽匯出／匯入進度</a></div></section>
+      <section id="references" class="tutorial-section"><span class="eyebrow">READ THE SOURCE</span><h2>官方教材與延伸閱讀</h2><p>課程查核：2026-10-15。以下連結提供 API 細節與完整規格；閱讀後再將適合的部分接回本週實作。</p><ul class="lesson-references">{{REFERENCES}}</ul></section>
+      <nav class="lesson-pagination" aria-label="前後週課程">{{NAVIGATION}}</nav>
+    </div>
+  </div>
+  <p id="copy-status" role="status" aria-live="polite"></p>
+</main>
+<footer><div class="brand-footer">Agent Learning Radar<span>把理解，變成可以驗證的能力。</span></div><div>12 週實作課程 · 研究基準 2026-10-15<br>進度保存在瀏覽器，與首頁共用</div></footer>
+</body>
+</html>

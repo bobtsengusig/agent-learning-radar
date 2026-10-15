@@ -1,0 +1,19 @@
+{
+  "week": 9,
+  "intro": "把文件工具提供給不同助理使用，同時保留清楚的權限邊界。本週先學工具契約與授權，再以 MCP SDK 建立真正可探索的服務。",
+  "prerequisites": ["第 3 週的工具白名單與參數驗證", "第 7 週的可信身分與資料隔離觀念"],
+  "sections": [
+    {"title": "Host、client、server 各負責什麼？", "body": ["Host 是承載助理的應用程式，決定模型能使用哪些連線與資料；client 管理與特定 server 的協定連線；server 暴露工具、資源與提示等能力。MCP 提供一致的探索與呼叫方式，讓你不必為每個應用重寫一套工具協定。", "Tools 是可呼叫的能力，例如 read_document；resources 是可讀取的內容；prompts 是可提供給應用的提示模板。它們都不是最高權限的政策來源。工具名稱、描述與回傳內容來自服務，仍需按外部資料處理，不能讓新增 server 自動取得所有工具權限。"]},
+    {"title": "Schema 管輸入形狀，授權管誰能讀什麼", "body": ["read_document 接受 document_id，Schema 不允許額外欄位。Alice 只能讀 public-guide，Bob 另有 private-notes 權限。即使參數形狀正確，Alice 讀 private-notes 仍必須被 server 拒絕。不要把 principal 做成模型可填的參數，否則模型可以自稱 Bob。", "本週離線範例刻意不實作 MCP transport，只測試工具政策。正式服務應由已驗證的連線取得 principal，再執行相同授權函式。錯誤訊息避免洩漏未授權文件是否存在；對外可使用一致的拒絕回應，內部 trace 再保存必要原因。"]},
+    {"title": "本機連線不等於遠端服務已安全", "body": ["stdio 適合在本機啟動 server 進程；遠端 HTTP 服務需要處理身分驗證、授權、連線生命週期、逾時與取消。版本協商與能力探索讓雙方確認支援內容；規格日期與 SDK 套件版本是兩件事，必須檢查相容性。", "不要把使用者交給 A 服務的權杖直接轉送給無關 B 服務。明確限制 token 的受眾與用途，避免 token passthrough。唯讀工具也有資料外洩風險，所以仍應限制文件集合、輸出大小與呼叫頻率。"]}
+  ],
+  "walkthrough": ["執行 python week-09.py，查看工具的 inputSchema 與三種呼叫結果。", "沿著 call_tool 先檢查參數，再檢查 principal 的 grants。", "確認在 arguments 加入 principal=bob 不會切換身分，反而因額外欄位被拒絕。", "將 DOCUMENTS 換成自己的文件 ID 清單，保持 ID 到檔案路徑的映射在 server 內部，不接受任意路徑。"],
+  "expected": ["Alice 可讀 public-guide，但不能讀 private-notes。", "偽造 principal 參數被拒絕。輸出明確標示本程式只是政策練習，尚未建立 MCP 連線。"],
+  "exercises": [
+    {"title": "限制輸出大小", "task": "加入單次最多 2,000 字元的回傳限制，並提供 truncated 標記。", "hint": "限制必須由 server 執行，不依賴模型自己節制。", "answer": "回傳 text[:2000] 與 truncated=len(text)>2000；若需要分頁，使用受限的 offset／cursor，且每頁重新執行授權。"},
+    {"title": "撤銷權限", "task": "第一次讀取後移除 Alice 的 grants，再執行同一呼叫。", "hint": "不要只在建立連線時查一次權限。", "answer": "第二次應被拒絕。正式系統還要設定權限快取失效策略，避免已撤銷的連線一直保有舊權限。"}
+  ],
+  "quiz": [{"question": "MCP 相容是否代表工具已獲授權？", "answer": "不代表。互通協定與應用程式的使用者、資料及操作授權需要分別處理。"}, {"question": "工具輸入中的 owner 可以當登入身分嗎？", "answer": "不能。可信身分必須來自已驗證的 transport／應用程式工作階段，再由 server 套用政策。"}],
+  "integration": {"title": "建立真正的本機 MCP server", "body": ["選做：安裝與所選規格相容的 mcp SDK，將下方程式另存為 mcp_server.py。使用支援 stdio 的 MCP client 啟動它，先列出工具，再呼叫 read_course_document。stdio 的標準輸出用於協定訊息，除錯請寫到 stderr。", "範例只提供固定的公開課程資料，不含多使用者登入。要搬到遠端或接私密文件時，先加入經驗證的身分、權限與逾時政策，再調整 transport；不能把這個本機示範直接視為完成遠端授權。"], "code": "from mcp.server.fastmcp import FastMCP\n\nmcp = FastMCP(\"course-documents\")\nPUBLIC = {\"guide\": \"Checkpoint 保存任務狀態。\"}\n\n@mcp.tool()\ndef read_course_document(document_id: str) -> str:\n    \"\"\"只讀取固定公開課程文件；document_id 可用 guide。\"\"\"\n    if document_id not in PUBLIC:\n        raise ValueError(\"document unavailable\")\n    return PUBLIC[document_id]\n\nif __name__ == \"__main__\":\n    mcp.run(transport=\"stdio\")", "refs": [["MCP Python SDK", "https://github.com/modelcontextprotocol/python-sdk"], ["MCP 2026-07-28 specification", "https://modelcontextprotocol.io/specification/2026-07-28"]]},
+  "transfer": "交付真正的 MCP server、client 探索與呼叫紀錄、合法及越權測試，並列出規格日期、SDK 版本與實際使用的 transport。若只有離線政策測試，請標記 MCP 整合尚未完成。"
+}

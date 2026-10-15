@@ -1,0 +1,19 @@
+{
+  "week": 12,
+  "intro": "將研究流程包成可操作的服務：提交後立刻取得任務 ID，之後可以查進度、取消與取報告。本週把前 11 週串起來，完成可維護的結業作品。",
+  "prerequisites": ["已有研究、引用、任務狀態與回歸測試", "理解 HTTP、容器與環境變數的基本用途"],
+  "sections": [
+    {"title": "API 請求與長任務分開", "body": ["POST /tasks 驗證身分、輸入與預算後建立任務，回傳 202 與 task_id；worker 從持久化佇列取工作；GET /tasks/{id} 查狀態與結果；取消請求設定取消意圖。使用者關掉網頁，不應讓任務與狀態一起消失。", "FastAPI BackgroundTasks 適合某些簡單的回應後工作，但不是具持久化、跨程序恢復能力的工作佇列。多 worker、重啟與長時間模型呼叫需要明確的 queue、資料庫與執行租約。健康檢查也要分開看 HTTP 服務存活、資料庫連線與 worker 是否有進展。"]},
+    {"title": "取消、逾時與冪等建立", "body": ["任務可依序經過 queued、running，再進入 completed、failed、cancelled 或 timed_out 等終止狀態。Worker 在工具與模型步驟之間檢查取消旗標及 deadline；已經發生的外部副作用不會因取消自動回復，所以發布前仍要檢查授權與核准。", "用 idempotency key 防止使用者重試 POST 產生兩個任務。相同 key 與相同輸入回傳既有 task_id；相同 key 卻不同輸入應拒絕。正式鍵需限定使用者範圍並原子地寫入資料庫，記憶體 dict 無法協調多個 web worker。"]},
+    {"title": "把能跑變成能維護", "body": ["容器只封裝程式與依賴，不應是唯一資料保存位置。任務與 checkpoint 放到持久化儲存，金鑰由環境或秘密管理注入，依賴版本與資料 migration 都要可追溯。設定任務步數、總時間、費用與並行上限，讓故障不會變成無限用量。", "發版前跑第 11 週回歸，備份狀態並記錄上版版本；發版後用一題固定研究任務做煙霧測試。回退程式不一定能回退資料 schema，因此先設計相容的 migration。維護手冊應寫清楚失敗重試、卡住任務處理、金鑰輪替與還原方式。"]}
+  ],
+  "walkthrough": ["執行 python week-12.py，觀察三個任務最後分別 completed、cancelled、timed_out。", "追蹤 create 對相同 request key 的處理，確認不會建立兩筆相同任務。", "檢查 cancelled 任務的 report 仍是 None，即使再次執行 step 也不繼續。", "把目前 in-memory TaskService 當作契約模型，先寫儲存與 worker 的替代介面，再接入真正研究流程。"],
+  "expected": ["request-1 重複提交取得同一個 ID，正常任務有示範報告。", "取消與逾時任務維持終止狀態，沒有殘留 server 或背景程序。", "此範例不含真實搜尋、模型或持久化，不能當成已完成的研究服務。"],
+  "exercises": [
+    {"title": "測試 key 衝突", "task": "用 request-1 提交不同 question，確認被拒絕。", "hint": "相同 key 不代表可以覆寫原任務內容。", "answer": "應回傳衝突錯誤，保留原本問題與 task_id。HTTP 層可映射為 409；儲存層需用唯一約束與交易避免併發建立。"},
+    {"title": "設計重啟驗收", "task": "列出正式服務的重啟測試，涵蓋 queued、running 與等待核准的任務。", "hint": "Worker 租約到期、checkpoint 與冪等工具要一起考慮。", "answer": "queued 任務仍可取出；running 任務在租約過期後安全接手並從 checkpoint 恢復；等待核准任務不會自行執行。已完成副作用以原 key 查回結果，不能重新發布。"}
+  ],
+  "quiz": [{"question": "將程式放入 Docker 就能保存任務狀態嗎？", "answer": "不能。資料需放到適當的持久化儲存並具備備份與還原流程。"}, {"question": "取消成功是否代表外部操作都被撤銷？", "answer": "不代表。取消通常停止未執行的步驟；已發生的副作用需要明確的補償或回復設計。"}],
+  "integration": {"title": "最小 FastAPI 介面外殼", "body": ["選做：安裝 fastapi 與 uvicorn，將本週下載檔另存為 task_service.py，再把下方另存 api.py，使用 uvicorn api:app --reload 啟動開發服務。這個外殼只建立、查詢與取消任務，沒有 worker，所以新任務會維持 queued。", "將 worker、身分與持久化補齊後才能部署。這段刻意回傳狀態而不假裝已完成研究；正式服務的每個路由都要檢查登入使用者是否擁有 task_id，並用共享儲存取代記憶體。"], "code": "from fastapi import FastAPI, Header, HTTPException\nfrom pydantic import BaseModel, Field\nfrom task_service import TaskService\n\napp = FastAPI()\nservice = TaskService()\n\nclass TaskInput(BaseModel):\n    question: str = Field(min_length=1, max_length=1000)\n\n@app.post(\"/tasks\", status_code=202)\ndef create_task(body: TaskInput, idempotency_key: str = Header(min_length=1)):\n    try:\n        return {\"task_id\": service.create(idempotency_key, body.question)}\n    except ValueError as exc:\n        raise HTTPException(status_code=409, detail=str(exc)) from exc\n\n@app.get(\"/tasks/{task_id}\")\ndef get_task(task_id: str):\n    if task_id not in service.tasks:\n        raise HTTPException(status_code=404, detail=\"task unavailable\")\n    return service.tasks[task_id]\n\n@app.post(\"/tasks/{task_id}/cancel\")\ndef cancel_task(task_id: str):\n    get_task(task_id)\n    service.cancel(task_id)\n    return get_task(task_id)", "refs": [["FastAPI background tasks 與限制", "https://fastapi.tiangolo.com/tutorial/background-tasks/"], ["Docker get started", "https://docs.docker.com/get-started/"]]},
+  "transfer": "結業交付：可部署的 API 與 worker、可恢復任務資料、含引用的真實研究報告、40 題以上回歸結果、用量與錯誤 trace，以及含備份、重啟與回退操作的維護手冊。用一題正常、一題無答案、一題取消與一次程序重啟完成展示。"
+}

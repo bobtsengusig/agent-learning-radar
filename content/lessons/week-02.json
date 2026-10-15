@@ -1,0 +1,19 @@
+{
+  "week": 2,
+  "intro": "讓『幫我研究一下』變成可執行的研究計畫。你會定義資料契約、拒絕不合法輸出，再把結構正確與內容有用分開檢查。",
+  "prerequisites": ["已完成第 1 週並能解讀成功與失敗紀錄", "理解 Python dict、list 與型別檢查"],
+  "sections": [
+    {"title": "先定義下游需要什麼，再寫 Prompt", "body": ["研究計畫至少需要原始問題、子問題與來源數量上限。先定義這些欄位，因為搜尋工具要讀子問題、預算控制要讀上限。若只要求『輸出漂亮 JSON』，模型仍可能增加未定義欄位、把整數寫成文字，甚至提出無法回答的子問題。", "Prompt 可以分成任務、限制、輸出契約與示例。任務是把問題拆小；限制是不可編造來源、子問題不可重複；輸出契約指定欄位；示例只示範格式與尺度。不要把待研究文件裡的文字當成應用程式規則。"], "bullets": ["question：保留使用者想解決的問題，不能被摘要換掉。", "subquestions：1–5 個能各自查證的問題。", "max_sources：1–10 的整數，是程式可強制執行的預算。"]},
+    {"title": "JSON 合法、Schema 合法、語意合理是三道不同檢查", "body": ["json.loads 只確認語法。Schema 再限制欄位、型別與範圍，例如 additionalProperties=false 可拒絕意外欄位。Python 中 bool 是 int 的子類，因此範例使用 type(value) is int，避免把 true 當作來源數量。Pydantic 可以集中實作這些資料驗證，減少散落的 if。", "即使輸出完全通過 Schema，『MCP 一定安全嗎？』仍可能被拆成帶有錯誤前提的子問題。語意驗收需要另外檢查是否涵蓋原始問題、是否可搜尋、是否偷加假設。不要把型別安全當成研究品質的分數。"]},
+    {"title": "驗證失敗後，如何有限度修正", "body": ["第一次格式錯誤可把簡短的驗證錯誤回饋給模型，要求只修正資料；最多重試一兩次並記錄每次輸出。若連續不合法，就回傳明確失敗，讓上游縮小任務。程式不應默默把 max_sources=999 改成 10，因為這會隱藏模型或 Prompt 的問題。", "正式環境可以使用 API 的 structured outputs，讓模型遵守支援的 Schema 子集。應用端仍需處理拒答、未完成輸出與本地驗證錯誤。外部 API 成功回應，不代表一定有可用的研究計畫。"]}
+  ],
+  "walkthrough": ["執行 python week-02.py，觀察 ResearchPlan.from_json 的輸入與回傳值。", "沿著程式依序確認：JSON 解析 → 欄位集合 → 字串與清單 → 數值範圍。", "將 max_sources 改成 true、字串 5 與整數 5，分別確認哪些被拒絕。", "新增一份 Schema 合法但子問題不相關的計畫，寫下為何它應在語意檢查中失敗。"],
+  "expected": ["一份合法研究計畫被接受，三種無效資料被拒絕。", "輸出提醒 semantic_quality 仍需另外評估；驗證程式沒有替研究內容打分。"],
+  "exercises": [
+    {"title": "消除重複子問題", "task": "加入規則，拒絕去除首尾空白後相同的子問題。", "hint": "先做 strip，再比較 set 的大小；不要直接把重複內容刪掉而不回報。", "answer": "normalized = [s.strip() for s in subquestions]；若 len(set(normalized)) != len(normalized) 就 raise ValueError。中文近義句仍可能漏過，需要語意或人工檢查。"},
+    {"title": "設計一個反例", "task": "寫出一份所有欄位合法，但不值得執行的研究計畫。", "hint": "可以讓子問題與原始需求無關，或把結論放進問題當成既定事實。", "answer": "例如 question 要比較 checkpoint 實作，子問題卻只問『哪個圖示最好看』。Schema 無法發現任務偏離；應加入與原始需求的覆蓋度檢查。"}
+  ],
+  "quiz": [{"question": "為什麼限制額外欄位？", "answer": "避免模型新增下游無法理解的行為設定，也讓契約變更能被明確發現。"}, {"question": "Structured outputs 能保證研究結論正確嗎？", "answer": "不能。它處理輸出形狀與受支援的型別限制，來源與內容仍需驗證。"}],
+  "integration": {"title": "以 Pydantic 表達相同契約", "body": ["選做：安裝 pydantic 後執行下方模型定義，替換離線範例的手寫驗證。若接 OpenAI structured outputs，使用官方文件對應的 responses.parse 與 text_format，並處理拒答與不完整回應。先確認目前 SDK 版本支援該介面。"], "code": "from pydantic import BaseModel, ConfigDict, Field\n\nclass ResearchPlan(BaseModel):\n    model_config = ConfigDict(extra=\"forbid\", strict=True)\n    question: str = Field(min_length=1)\n    subquestions: list[str] = Field(min_length=1, max_length=5)\n    max_sources: int = Field(ge=1, le=10)\n\nplan = ResearchPlan.model_validate({\n    \"question\": \"比較任務恢復方法\",\n    \"subquestions\": [\"checkpoint 需要保存哪些欄位？\"],\n    \"max_sources\": 5,\n})\nprint(plan.model_dump())", "refs": [["Pydantic models", "https://docs.pydantic.dev/latest/concepts/models/"], ["Structured outputs", "https://developers.openai.com/api/docs/guides/structured-outputs"]]},
+  "transfer": "為自己的 10 題研究問題各寫一份預期計畫。保存合法、格式錯誤、語意偏離三種案例，讓第 3 週的工具迴圈只接收已驗證的計畫。"
+}

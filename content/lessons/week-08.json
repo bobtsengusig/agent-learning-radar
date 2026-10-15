@@ -1,0 +1,19 @@
+{
+  "week": 8,
+  "intro": "一個可靠的助理必須能停下來、等確認，並從故障中繼續。本週用狀態機理解 checkpoint、重播與冪等性，再對應到 LangGraph。",
+  "prerequisites": ["第 7 週任務狀態已可序列化保存", "理解唯讀工具與有副作用操作的差異"],
+  "sections": [
+    {"title": "把流程切成能驗證的狀態轉移", "body": ["研究流程可拆成 plan、search、read、check、draft、awaiting_approval、completed。每個節點讀取明確欄位、產生狀態更新；條件邊根據結果路由，例如證據不足回到搜尋，超過預算則停止。節點不是越多越好，要讓故障位置與恢復責任清楚。", "Checkpoint 保存的是某個執行位置的狀態，不是整個外部世界。模型回覆、文件版本與工具結果若會影響重播，需保留對應識別與結果。正式流程選用可持久化的 checkpointer，單純保存在 Python 變數只能模擬恢復。"]},
+    {"title": "最危險的中斷點：副作用之後、紀錄之前", "body": ["假設報告已發布，但程式在保存 completed 前當機。重啟後狀態仍是待發布，直接重跑會發兩次。範例故意在 ledger 寫入之後拋出錯誤，再使用相同 task_id:publish:v1 恢復；ledger 的穩定鍵讓第二次取得相同結果。", "這是冪等性：相同操作重試不會產生更多副作用。真實服務需由接收端原子地檢查冪等鍵，或用交易、outbox 與外部 API 的 idempotency 支援協調。記憶體 dict 的 setdefault 只示範概念，不能保證跨程序或跨服務恰好一次。"]},
+    {"title": "人工確認也要是一個可恢復狀態", "body": ["先保存待核准的具體內容，例如報告版本、目的地與操作種類，再暫停等待。核准後執行的必須是同一份內容；若內容改了，就需要新的核准。拒絕也要成為可追溯的結果。不要只在聊天文字中寫『請確認』，卻讓背景流程繼續發布。", "LangGraph 的 interrupt 會暫停並保存狀態，之後以相同 thread 設定搭配 Command(resume=...) 繼續。恢復時包含 interrupt 的節點可能從開頭重跑，因此 interrupt 之前不能放不受保護的副作用。把工具呼叫、核准點與發布節點分清楚。"]}
+  ],
+  "walkthrough": ["執行 python week-08.py，先看 draft 如何進入 awaiting_approval。", "在 advance 裡找到 crash=True 的位置，確認副作用已發生，但狀態還沒 completed。", "追蹤第二次 advance 如何使用相同 key，最後 effect_count 仍為 1。", "查看 rejected 任務：未核准時不新增 ledger。將 key 改成每次隨機產生，觀察為何會破壞冪等性。"],
+  "expected": ["第一個任務在模擬中斷後恢復為 completed，副作用只有一筆。", "第二個任務被拒絕，沒有額外發布。此範例仍是記憶體模擬，不是可抗當機的儲存。"],
+  "exercises": [
+    {"title": "綁定核准內容", "task": "為待發布報告加入 content_hash，核准時也提供相同 hash。", "hint": "核准之後若內容變更，就不能沿用同一個許可。", "answer": "在狀態保存待核准 hash；resume 時比較 approval_hash。不同則重新進入待核准，不執行發布。冪等鍵也應對應操作版本。"},
+    {"title": "故障矩陣", "task": "列出副作用之前、之後、checkpoint 之後三個中斷點，各自應如何恢復。", "hint": "逐一思考外部世界與本地狀態是否一致。", "answer": "之前可安全重試；之後但未 checkpoint 需要用穩定冪等鍵查詢或重試；checkpoint 之後應從下一節點繼續，不再重複操作。"}
+  ],
+  "quiz": [{"question": "有 checkpoint 就能保證外部工具只執行一次嗎？", "answer": "不能。狀態保存與外部副作用不是同一個交易，需要冪等與恢復設計。"}, {"question": "為什麼 interrupt 前的程式要小心？", "answer": "節點恢復可能從開頭重播，未受保護的副作用可能再次發生。"}],
+  "integration": {"title": "最小 LangGraph 暫停與恢復", "body": ["選做：安裝 langgraph。以下程式使用 InMemorySaver 示範同一程序內的暫停；正式練習需換成相容版本的持久化 checkpointer。這段不會呼叫模型，也不會發布報告。", "先觀察第一次 invoke 的中斷資料，再觀察 resume 後的 approved。相同 thread_id 定位相同流程；真實服務還要在外層驗證誰有權恢復該流程。"], "code": "from typing import TypedDict\nfrom langgraph.graph import StateGraph, START, END\nfrom langgraph.checkpoint.memory import InMemorySaver\nfrom langgraph.types import interrupt, Command\n\nclass State(TypedDict):\n    report: str\n    approved: bool\n\ndef review(state: State):\n    approved = interrupt({\"report\": state[\"report\"]})\n    return {\"approved\": approved is True}\n\nbuilder = StateGraph(State)\nbuilder.add_node(\"review\", review)\nbuilder.add_edge(START, \"review\")\nbuilder.add_edge(\"review\", END)\napp = builder.compile(checkpointer=InMemorySaver())\nconfig = {\"configurable\": {\"thread_id\": \"course-demo\"}}\nprint(app.invoke({\"report\": \"待審報告\", \"approved\": False}, config))\nprint(app.invoke(Command(resume=True), config))", "refs": [["LangGraph interrupts", "https://docs.langchain.com/oss/python/langgraph/interrupts"], ["Durable execution", "https://docs.langchain.com/oss/python/langgraph/durable-execution"]]},
+  "transfer": "以 LangGraph 串起研究流程，加入持久化、核准與故障注入。展示重新啟動後可從 checkpoint 恢復，且同一份報告不會因重試而重複寫入。"
+}

@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 from email.utils import format_datetime
 
 from radar import ROOT, TAIPEI, UTC, parse_date, read_json, safe_url, validate
+from lessons import render_lessons
 
 
 def esc(value):
@@ -34,6 +35,7 @@ def week_card(week):
       <h3>{esc(week['title'])}</h3><p class="muted">{esc(week['subtitle'])}</p>
       <p class="week-goal">{esc(week['goal'])}</p>
       <div class="deliverable"><span>本週成果</span>{esc(week['deliverable'])}</div>
+      <a class="lesson-link" href="./lessons/week-{num:02d}/">進入第 {num} 週教學 <span aria-hidden="true">→</span></a>
       <details><summary>展開學習與實作指南 <span aria-hidden="true">＋</span></summary><div class="lesson-grid">{blocks}</div>
       <div class="reference-links"><h4>官方教材</h4>{refs}</div></details></article>'''
 
@@ -98,6 +100,7 @@ def build(output=None):
     (output / "index.html").write_text(template, encoding="utf-8")
     for name in ("app.js", "style.css", "favicon.svg"):
         shutil.copyfile(ROOT / "site" / name, output / name)
+    render_lessons(output, courses, settings)
     (output / ".nojekyll").touch()
     (output / "data").mkdir(exist_ok=True)
     for source, name in [(ROOT / "data/radar.json", "radar.json"), (ROOT / "sources.json", "sources.json")]:

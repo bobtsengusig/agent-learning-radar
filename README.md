@@ -3,13 +3,24 @@
 為具影像 AI 開發經驗、初步理解 LLM 的工程師設計的繁體中文學習網站。
 
 - 研究基準：**2026-10-15**；12 週、每週 6–8 小時，以個人知識與研究助理為實作主線。
-- 每週皆有目標、概念、步驟、完成條件、常見失敗與官方教材。
+- 每週皆有獨立教學頁面：概念解說、可執行 Python 練習、預期結果、練習與參考解答、自我檢查、專案驗收與官方教材。
 - 20 個官方來源的技術雷達、9 個框架／架構選項的比較、來源健康狀態。
 - 產品／分類／類型／日期／關鍵字篩選、收藏、進度保存、JSON 備份及 RSS。
 - 純靜態前端與 Python 3.12 標準函式庫。收集、測試、建置均不需付費 LLM API、套件安裝或第三方資料庫。
 
 網站：<https://bobtsengusig.github.io/agent-learning-radar/>  
 RSS：<https://bobtsengusig.github.io/agent-learning-radar/feed.xml>
+
+## 12 週教學
+
+從首頁每週卡片的「進入教學」開啟，或直接進入[第 1 週](https://bobtsengusig.github.io/agent-learning-radar/lessons/week-01/)。各頁有目錄、全部課程、前後週導航、程式碼複製與 Python 檔下載。進度與首頁共用原有瀏覽器備份格式，收藏不受影響。
+
+- `content/lessons/week-NN.json`：人工編寫的繁體中文教學，與 Roadmap 目標分開維護。
+- `labs/week-NN.py`：12 個可獨立執行的標準函式庫練習，不連網、不需金鑰、不啟動常駐服務。下載後執行 `python week-01.py`，其餘週依檔名替換。
+- `scripts/lessons.py` 與 `site/lesson.*`：產生 `dist/lessons/week-NN/index.html` 與下載檔；沒有內容或練習檔時建置失敗，避免空頁發布。
+- `tests/test_lessons.py`：實際執行全部 12 個離線練習，檢查教學內容、選做 Python 語法、下載檔一致性、各頁資源與站內連結。
+
+離線練習刻意使用可預測的模擬與小資料集，教控制流程與評估方法；它們不是模型品質或框架效能基準。每頁另列接上真實 API／SDK 的步驟與官方參考。選做串接需自行安裝套件、記錄版本，使用付費模型會產生費用；CI 只檢查這些串接片段的語法，沒有使用付費 API 做線上測試。結業研究助理需依各週交付要求逐步完成，網站不會代為執行。
 
 ## 本機使用
 

@@ -1,0 +1,19 @@
+{
+  "week": 1,
+  "intro": "先把模型視為一個會失敗、耗時且有成本的外部服務。本週從你熟悉的模型推論流程出發，建立可替換的呼叫介面，讓後續 Agent 每一次思考都有紀錄可查。",
+  "prerequisites": ["能讀寫 Python 函式、例外處理與 JSON", "已安裝 Python 3.12 或更新版本；先執行 python --version", "準備一個研究題目，例如：如何讓研究任務在中斷後繼續？"],
+  "sections": [
+    {"title": "一次模型呼叫裡，哪些東西是輸入？", "body": ["影像模型通常接收尺寸固定的張量；LLM 接收的則是經過 tokenization 的文字或多模態內容。Token 不是字數：中文、程式碼與特殊符號的切分方式不同，不同模型也可能使用不同 tokenizer。估算成本時先用供應商回傳的 usage，不要把字元長度直接換成帳單。", "角色訊息用來區分應用程式規則、使用者要求與模型回覆。把『回答需附來源』放在應用程式的指令層，把研究問題放在使用者輸入。上下文視窗是一次請求能處理的容量；放進更多歷史不保證答案更好，反而可能稀釋關鍵限制。"], "bullets": ["輸入：模型識別碼、指令、問題、工具或輸出格式設定。", "輸出：文字或工具請求、完成狀態、用量與供應商請求識別碼。", "應用程式補記：開始時間、延遲、錯誤類型、重試次數與自己的 task_id。"]},
+    {"title": "先量延遲，再談串流與推論模型", "body": ["用 perf_counter 量測整個請求的經過時間，適合比較使用者等多久；串流還要另外量第一個可見片段到達時間。第一個片段快，不代表完整答案也快。串流是交付方式，不能讓未驗證的部分結果直接執行有副作用的工具。", "推論模型可能在產生可見答案前投入更多計算。不要嘗試把隱藏推理當成可讀的除錯紀錄；應保存可觀測的工具、輸入摘要、輸出與錯誤。模型名稱與用量欄位以當前 API 文件為準，學習程式把 model 放在環境變數，避免散落在各檔案。"]},
+    {"title": "建立成功與失敗都能回傳的介面", "body": ["今天的離線模型只回傳固定文字，目的是測試呼叫外殼。measure 函式將『執行』與『紀錄』分開：正常結果標成 ok，空白問題引發 ValueError，呼叫端仍然能收到一致的紀錄。之後換成真實 API 時，研究流程不必知道底層 SDK 的每個例外。", "只對可重試的暫時錯誤設定有限次退避，例如限流與部分網路錯誤；格式錯誤與無效參數應直接修正。先設每任務最大呼叫次數，再接付費 API。不要用無限重試把失敗變成失控的費用。"]}
+  ],
+  "walkthrough": ["下載下方 week-01.py，放到自己的 agent-course 資料夾。後續各週也使用同一個資料夾。", "在該資料夾的終端機執行 python week-01.py；Windows 也可以使用 py -3.12 week-01.py。所有離線練習只使用標準函式庫。", "先找 ModelResult，再看 MockModel.generate，最後追蹤 measure 如何計算延遲並處理錯誤。", "修改第二個問題為正常文字後重跑，確認成功率由 2/3 變成 1。把修改前後的輸出存入自己的學習筆記。"],
+  "expected": ["三筆紀錄依序為 ok、error、ok，成功率約 0.667。", "latency_ms 為非負值，每台電腦的數值不同，不需逐字相同。", "input_chars 與 output_chars 明確表示字元數，沒有把它們假裝成 token 用量。"],
+  "exercises": [
+    {"title": "替每次呼叫編號", "task": "在每筆紀錄加入 request_id，讓三筆紀錄可以互相區分。", "hint": "可用 enumerate 給離線測試穩定編號；正式系統用 UUID 或上游傳入的 task_id。", "answer": "將 question_index 傳入 measure，回傳 record 時一併加入。不要以模型回覆當識別碼，重複的回覆不代表同一次請求。"},
+    {"title": "把『快』拆成兩個問題", "task": "假設 A 模型第一個片段 0.4 秒、完成 8 秒；B 模型第一個片段 1 秒、完成 3 秒。為互動問答與背景研究分別選指標。", "hint": "使用者何時得到有用內容，和系統何時能驗證完整成果，是兩個時點。", "answer": "互動 UI 可同時看首片段與總延遲；背景研究優先看總延遲、成功率與費用。僅憑 0.4 秒不能判定 A 更適合整個 Agent。"}
+  ],
+  "quiz": [{"question": "離線範例的字元數可以直接估算 API 帳單嗎？", "answer": "不能。正式測量需使用供應商 usage 與當期價格，並區分輸入、輸出及可能的快取或推論計費欄位。"}, {"question": "為什麼錯誤也要成為有格式的紀錄？", "answer": "成功率的分母必須包含失敗，後續也需要依錯誤類型決定修正、停止或有限重試。"}],
+  "integration": {"title": "接上真實 Responses API", "body": ["以下是選做範例，需要另外安裝 openai 並自行設定 OPENAI_API_KEY 與 OPENAI_MODEL。金鑰只放環境變數；這個網站不收集金鑰，也不替你呼叫 API。執行會產生供應商費用。", "先保留相同的 measure 外殼，再將 MockModel 換成 API adapter。直接觀察 response.usage 的實際欄位，保存 model 與 response.id。先完成一次最小呼叫，再試串流，避免同時增加太多變因。"], "code": "import os\nfrom openai import OpenAI\n\nclient = OpenAI()\nresponse = client.responses.create(\n    model=os.environ[\"OPENAI_MODEL\"],\n    instructions=\"使用繁體中文；缺乏證據時明確說明。\",\n    input=\"解釋 Agent loop 的三個基本步驟。\",\n)\nprint(response.output_text)\nprint(response.usage)", "refs": [["Responses Python API", "https://developers.openai.com/api/reference/python/resources/responses/methods/create"]]},
+  "transfer": "把離線呼叫紀錄擴充成 10 題研究問題的 CSV 或 JSON。正式串接時保留相同問題，記錄模型識別碼、成功率、延遲與實際用量，作為後續各週的比較起點。"
+}

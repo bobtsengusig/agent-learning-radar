@@ -1,0 +1,19 @@
+{
+  "week": 4,
+  "intro": "把手寫迴圈換成 SDK 前，先建立一把不會跟著實作一起改變的尺。本週用 20 題固定任務比較行為，再把工具、執行與評估分成獨立模組。",
+  "prerequisites": ["第 3 週的工具介面與停止狀態已可測試", "能區分輸出格式檢查與內容品質檢查"],
+  "sections": [
+    {"title": "SDK 接手什麼，你仍負責什麼？", "body": ["Agent SDK 通常負責模型與工具的訊息往返、執行抽象與追蹤介面，讓你不用重寫每個供應商的細節。它沒有替你決定任務是否值得做，也沒有自動定義搜尋權限、成本上限與正確答案。先列出手寫迴圈的責任，再逐項對應到 SDK。", "模型 API 是單次呼叫介面；SDK 是你程式內的執行元件；流程 runtime 管理多步狀態與恢復。這些責任可以重疊，但選型時應看你缺少哪種能力。不要為了使用某個框架，把原本三個步驟的任務拆成十個角色。"]},
+    {"title": "將任務集與實作隔離", "body": ["每題測試保存輸入、預期行為與評分規則。例如正常問題應使用 search_docs；空白問題應先澄清。baseline 對所有問題都搜尋，routed 先攔截空白或過長輸入。這個小實驗能證明路由規則有用，但不能證明 LLM 的研究能力提升。", "評估集不要只保存你剛看過的成功案例。加入不同問法、工具無資料、錯誤參數與不應使用工具的題目。修改 Prompt 時留一部分未參與調整的保留集，避免把測試答案寫進提示。像影像模型一樣，資料洩漏會讓分數失去意義。"]},
+    {"title": "比較行為，也比較工程成本", "body": ["同一題先記錄完成狀態、工具選擇、參數正確性，再看回答支持度。端到端成功率用通過的任務數除以全部任務數；對非確定性的模型需重複執行，報告波動與失敗案例。一次 20/20 不能代表之後永遠成功。", "同時記錄程式複雜度、工具測試是否容易、trace 是否足以除錯、延遲與費用。SDK 版若更好維護且品質沒有退步，就有導入理由；若新增框架只增加依賴，也可以保留簡單迴圈。"]}
+  ],
+  "walkthrough": ["執行 python week-04.py，閱讀 evaluate 如何評分工具選擇與參數。", "找出 20 題中的 16 題一般問題與 4 題空白輸入，解釋 baseline 為何漏掉四題。", "新增一個超過長度上限的案例，同時補上預期 clarify 行為。", "建立自己的 cases.json，把測試輸入與決策函式分開保存；後續 SDK 版也使用同一份資料。"],
+  "expected": ["原始 20 題中 baseline 通過 16 題，routed 通過 20 題。", "結果標明這是確定性路由檢查，不是模型理解、引用品質或真實延遲測試。"],
+  "exercises": [
+    {"title": "避免只剩一個總分", "task": "讓 evaluate 回傳失敗題目的索引、預期工具與實際工具。", "hint": "保留逐題明細，再從明細彙總，不要只累加計數。", "answer": "每題建立 passed、expected、actual 欄位；總分取 passed 的平均。這樣可以發現分數相同但失敗類型已改變的版本。"},
+    {"title": "設計採用 SDK 的判準", "task": "列出品質、成本與維護三項門檻，決定什麼情況下採用 SDK 版本。", "hint": "門檻要能在比較前寫下來，避免看完結果才更改標準。", "answer": "例如原有權限案例全部通過、研究成功率未顯著退步、費用在任務預算內，且能減少訊息處理程式。實際數值應由你的任務需求決定。"}
+  ],
+  "quiz": [{"question": "SDK 的 trace 能代替評估集嗎？", "answer": "不能。Trace 解釋一次執行發生了什麼；評估集定義哪些行為算成功，兩者互補。"}, {"question": "20/20 的離線路由測試代表什麼？", "answer": "只代表這 20 個確定性案例符合路由契約，不能推論付費模型或真實研究品質。"}],
+  "integration": {"title": "最小 OpenAI Agents SDK 接線", "body": ["選做：安裝 openai-agents，設定 OPENAI_API_KEY 與 OPENAI_MODEL。以下原創範例只提供一個唯讀工具；Runner 負責模型與工具往返，max_turns 限制迴圈。執行會產生模型費用。", "將 result.final_output 與工具 trace 對應回 cases.json。上線前確認 tracing 的資料保存與敏感資訊設定，不要把完整私密文件或金鑰當成除錯內容。"], "code": "import asyncio\nimport os\nfrom agents import Agent, Runner, function_tool\n\n@function_tool\ndef search_docs(query: str) -> str:\n    \"\"\"搜尋已授權的課程文件，回傳來源 ID 與文字。\"\"\"\n    if not query.strip() or len(query) > 80:\n        raise ValueError(\"invalid query\")\n    return \"[doc-1] Checkpoint 保存任務狀態。\"\n\nasync def main():\n    agent = Agent(name=\"研究助理\",\n        instructions=\"先搜尋；依證據回答並附來源 ID。\",\n        model=os.environ[\"OPENAI_MODEL\"], tools=[search_docs])\n    result = await Runner.run(agent, \"checkpoint 有什麼用途？\", max_turns=4)\n    print(result.final_output)\n\nasyncio.run(main())", "refs": [["Agents SDK quickstart", "https://developers.openai.com/api/docs/guides/agents/quickstart"]]},
+  "transfer": "交付手寫與 SDK 版的相同 20 題比較表。SDK 尚未接 API 時先提交離線路由基準，清楚標明哪些指標尚未測量，不要填入猜測的模型分數。"
+}

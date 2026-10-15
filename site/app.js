@@ -39,6 +39,15 @@
     save(); updateProgress();
   }));
   updateProgress();
+  function refreshPersonal() {
+    try {
+      const saved = localStorage.getItem(key);
+      personal = saved ? validateBackup(JSON.parse(saved)) : empty();
+      updateProgress();
+    } catch { announce('無法重新讀取進度；請匯出備份後檢查瀏覽器儲存空間。'); }
+  }
+  window.addEventListener('pageshow', refreshPersonal);
+  window.addEventListener('storage', event => { if (event.key === key || event.key === null) refreshPersonal(); });
 
   // Anchor navigation remains fully usable without JS; enhance it into focused panels.
   const panels = new Set(['roadmap', 'radar', 'frameworks', 'weekly', 'sources']);
