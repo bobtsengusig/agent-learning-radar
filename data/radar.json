@@ -2,6 +2,24 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "langgraph:413420502",
+      "source_id": "langgraph",
+      "product": "LangGraph",
+      "category": "framework",
+      "title": "langgraph-prebuilt==1.1.1",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.1",
+      "published_at": "2026-10-15T04:32:40Z",
+      "source_body_hash": "508067a60e3d114b6ba1d758612decb2f6bde73cb3d8a67757440cff6a092bc1",
+      "keywords": [],
+      "excerpt": "Changes since prebuilt==1.1.0 * release(prebuilt): 1.1.1 (#9316) * release(checkpoint-postgres): 3.2.0 (#9313) * release(checkpoint-postgres): 3.1.3 (#9287) * release(checkpoint-sq…",
+      "version": "prebuilt==1.1.1",
+      "release_type": "release",
+      "content_hash": "639ba2faac1edf7f59ed99083e0806003a96688568be137d199514a2376b4357",
+      "first_seen_at": "2026-10-15T05:20:52Z",
+      "updated_at": "2026-10-15T05:20:52Z",
+      "revision_count": 0
+    },
+    {
       "id": "openai-agents:413354170",
       "source_id": "openai-agents",
       "product": "OpenAI Agents SDK",
@@ -10797,160 +10815,160 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 26,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 31,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 15,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 7,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "openai-agents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 15,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 45,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
-      "items_in_window": 24,
+      "items_in_window": 25,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 93,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 18,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 25,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 57,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 26,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 3,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 4,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 95,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 11,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 31,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-10-15T04:15:01Z",
-      "last_success_at": "2026-10-15T04:15:01Z",
+      "last_attempt_at": "2026-10-15T05:20:52Z",
+      "last_success_at": "2026-10-15T05:20:52Z",
       "error": null,
       "items_in_window": 7,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
@@ -11581,6 +11599,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-10-15T04:15:01Z",
-  "last_success_at": "2026-10-15T04:15:01Z"
+  "last_attempt_at": "2026-10-15T05:20:52Z",
+  "last_success_at": "2026-10-15T05:20:52Z"
 }
