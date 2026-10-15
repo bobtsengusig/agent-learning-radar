@@ -1,0 +1,87 @@
+name: Update radar and deploy Pages
+
+on:
+  schedule:
+    - cron: '17 0 * * *' # 08:17 Asia/Taipei, UTC+8 without DST
+  workflow_dispatch:
+    inputs:
+      weekly:
+        description: Regenerate previous complete week's digest
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths-ignore: ['README.md', 'docs/**', 'LICENSE']
+
+concurrency:
+  group: radar-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  collect-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Collect official sources
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          FORCE_WEEKLY: ${{ inputs.weekly }}
+        run: |
+          if [ "$FORCE_WEEKLY" = "true" ]; then
+            python scripts/radar.py collect --weekly
+          else
+            python scripts/radar.py collect
+          fi
+      - name: Validate and render
+        run: |
+          python scripts/radar.py validate
+          python scripts/build.py
+      - name: Commit only validated public data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/radar.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh official radar data'
+            git push
+          fi
+      - name: Upload deployable website
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: dist
+      - name: Keep collection diagnostics
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: collection-status
+          path: .cache/collection-status.json
+          if-no-files-found: ignore
+          include-hidden-files: true
+          retention-days: 7
+  deploy:
+    needs: collect-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

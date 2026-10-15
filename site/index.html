@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="為影像 AI 工程師設計的 12 週 Agent 開發路線。從工具呼叫、RAG、MCP 到評估部署，每日追蹤 20 個官方技術來源。">
+  <meta name="theme-color" content="#112a2b">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
+  <title>Agent Learning Radar — 從理解模型，到打造助理</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="canonical" href="{{CANONICAL}}">
+  <link rel="alternate" type="application/rss+xml" title="Agent Learning Radar 每週彙整" href="./feed.xml">
+  <link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳至主要內容</a>
+<header class="site-header"><a href="#roadmap" class="brand"><img src="./favicon.svg" alt="" width="32" height="32"><span>Agent<span class="brand-light"> Learning Radar</span></span></a>
+  <div class="header-actions"><span class="baseline-label">研究基準 <b>2026.10.15</b></span><a href="https://github.com/bobtsengusig/agent-learning-radar" target="_blank" rel="noopener noreferrer" class="github-link">GitHub ↗</a></div></header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><div class="hero-kicker"><span class="status-dot"></span> YOUR NEXT CHAPTER IN AI</div>
+  <h1 id="hero-title">從理解模型，<br>到打造<span>可靠的助理。</span></h1>
+  <p>為有影像 AI 經驗的開發者設計。用 12 週走過 Agent 工程的核心能力，讓每一步學習，都有可驗收的成果。</p>
+  <a class="hero-cta" href="#week-1">開始第 1 週 <span aria-hidden="true">↗</span></a><span class="hero-note">每週 6–8 小時 · Python 主線</span></div>
+  <div class="hero-visual" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="crosshair horizontal"></div><div class="crosshair vertical"></div><div class="core"><span>AGENT</span><small>observe · act · verify</small></div><span class="orbit-node node-one">TOOLS</span><span class="orbit-node node-two">CONTEXT</span><span class="orbit-node node-three">EVALS</span><div class="visual-caption"><span>01 / SYSTEMS THAT DO THE WORK</span><span>● LEARN BY BUILDING</span></div></div>
+</section>
+<div class="overview-stats"><div><b>12<span> 週</span></b><span>從基礎到部署</span></div><div><b>20<span> 個</span></b><span>官方追蹤來源</span></div><div><b>08:17</b><span>每日更新 · 台北時間</span></div><div><b>100<span>%</span></b><span>來源可查核</span></div></div>
+<nav class="section-nav" aria-label="網站區段"><a class="active" href="#roadmap" data-nav="roadmap">學習路線 <span>12</span></a><a href="#radar" data-nav="radar">技術雷達</a><a href="#frameworks" data-nav="frameworks">框架比較</a><a href="#weekly" data-nav="weekly">每週彙整</a><a href="#sources" data-nav="sources">來源與狀態</a></nav>
+<div id="freshness" class="freshness" role="status">正在讀取來源狀態…</div>
+<section id="roadmap" class="panel" data-panel="roadmap" aria-labelledby="roadmap-heading">
+  <div class="section-heading"><div><span class="eyebrow">THE LEARNING PATH</span><h2 id="roadmap-heading">每一週，完成一個可用的能力。</h2><p>一個「個人知識與研究助理」貫穿全程。先做單一 Agent，再以評估決定是否需要分工。</p></div><div class="progress-box"><strong id="progress-label">0 / 12 週</strong><progress id="progress" value="0" max="12" aria-label="課程完成進度"></progress><small>進度保存在這個瀏覽器</small></div></div>
+  <details class="bridge"><summary>你的影像 AI 經驗，如何轉換成 Agent 能力？<span aria-hidden="true">＋</span></summary><div class="bridge-grid"><div><b>資料集 → 任務與執行軌跡</b><p>從圖片／標籤，延伸到問題、工具操作、證據與完成標準。</p></div><div><b>mAP／Recall → 端到端成功率</b><p>除了檢索 Recall，也量工具參數、引用支持度、耗時與成本。</p></div><div><b>推論服務 → 有狀態的工作流程</b><p>加入背景任務、重試、checkpoint、取消與人工確認。</p></div><div><b>MLOps → Agent 的評估迴圈</b><p>讓模型、Prompt、工具與資料版本，都能用固定任務集比較。</p></div></div></details>
+  <div class="learning-phases"><span><b>01–04</b> 打好基礎</span><span><b>05–07</b> 接上知識</span><span><b>08–10</b> 可靠執行</span><span><b>11–12</b> 走向產品</span></div>
+  <div class="week-grid">{{COURSES}}</div>
+  <div class="extension"><span class="eyebrow">AFTER THE FOUNDATIONS</span><h3>把你的影像專長接回來</h3><p>完成主線後，可延伸到影像文件檢索、多模態工具結果、語音助理、本地模型與微調。先建立文字任務的評估基準，再加入影像與聲音。</p><div class="tag-row"><span>多模態 RAG</span><span>Vision tools</span><span>Realtime voice</span><span>Local inference</span><span>Fine-tuning</span></div></div>
+</section>
+<section id="radar" class="panel" data-panel="radar" aria-labelledby="radar-heading">
+  <div class="section-heading"><div><span class="eyebrow">STAY IN THE LOOP</span><h2 id="radar-heading">技術會變，來源留下來。</h2><p>追蹤官方發布、版本與遷移消息。原文短摘錄、規則分類；重要性與成熟度仍需閱讀原文判斷。</p></div><a href="./feed.xml" class="outline-button">訂閱週報 RSS ↗</a></div>
+  <div class="filter-bar"><label class="search-field"><span>搜尋消息</span><input id="search" type="search" placeholder="模型、框架、關鍵字…" autocomplete="off"></label><label>產品<select id="product-filter"><option value="">全部產品</option></select></label><label>發布類型<select id="type-filter"><option value="">全部類型</option></select></label><label>日期<select id="date-filter"><option value="all">全部日期</option><option value="7">最近 7 日</option><option value="30">最近 30 日</option><option value="90">最近 90 日</option><option value="undated">日期未提供</option></select></label></div>
+  <div class="radar-tools"><div id="category-filters" class="chip-row" role="group" aria-label="消息分類"></div><label class="bookmark-filter"><input type="checkbox" id="bookmarks-only">只看收藏</label></div>
+  <div class="results-heading"><span id="result-count" role="status" aria-live="polite">官方更新</span><span>依發布日期排序 · 無日期依首次發現時間</span></div>
+  <div id="news-list" class="news-grid">{{NEWS}}</div><button id="load-more" type="button" class="outline-button load-more" hidden>載入更多</button><p class="data-note">初次收集：最近 90 日內、官方來源目前可取得的發布資料；來源保留量與分頁上限會影響完整性。日後更新持續累積，並非完整年度新聞資料庫。</p>
+</section>
+<section id="frameworks" class="panel" data-panel="frameworks" aria-labelledby="framework-heading"><div class="section-heading"><div><span class="eyebrow">CHOOSE WITH CONTEXT</span><h2 id="framework-heading">先理解分層，再挑選框架。</h2><p>以下是依官方文件整理的編輯判斷，查核基準為 2026-10-15。產品版本自動追蹤，課程與選型建議經人工查核後修訂。</p></div></div>
+  <div class="architecture"><span>模型 API</span><i>→</i><span>Agent SDK</span><i>→</i><span>流程 runtime</span><i>→</i><span>Harness／應用</span></div>
+  <p class="data-note">這是理解責任的分層方式，各產品能力可能重疊；同一套系統不必同時引入所有層。MCP 是工具／資料整合協定；A2A 處理獨立 Agent 系統的互通。</p><div class="framework-grid">{{FRAMEWORKS}}</div></section>
+<section id="weekly" class="panel" data-panel="weekly" aria-labelledby="weekly-heading"><div class="section-heading"><div><span class="eyebrow">THE WEEKLY CHECK-IN</span><h2 id="weekly-heading">一週的變化，一次看清楚。</h2><p>每週一彙整前一個完整週（台北時間週一至週日）。依分類列出官方消息，不產生 AI 影響分析。</p></div><a href="./feed.xml" class="outline-button">RSS 訂閱 ↗</a></div><div id="weekly-list"></div></section>
+<section id="sources" class="panel" data-panel="sources" aria-labelledby="sources-heading"><div class="section-heading"><div><span class="eyebrow">KNOW WHAT YOU KNOW</span><h2 id="sources-heading">每一筆資訊，都有來處。</h2><p>收集成功表示資料來源可讀取，不代表資訊完整或技術已成熟。來源失敗時保留上次成功資料。</p></div><a href="./data/radar.json" class="outline-button" download>下載公開資料</a></div><div id="source-summary" class="source-summary"></div><div class="table-wrap"><table><caption class="sr-only">20 個官方追蹤來源的健康狀態</caption><thead><tr><th scope="col">來源／類別</th><th scope="col">狀態</th><th scope="col">最近檢查</th><th scope="col">最近成功</th><th scope="col">涵蓋範圍／錯誤</th></tr></thead><tbody id="sources-body"></tbody></table></div><div class="notice"><b>排程是約定時間，並非即時保證。</b><p>GitHub Actions 在忙碌時可能延後執行；公開專案長期沒有活動時排程可能停用。超過 48 小時未成功更新時，網站會顯示提醒。可從 GitHub Actions 手動重跑與查看紀錄。</p><a href="https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule" target="_blank" rel="noopener noreferrer">GitHub 排程限制 ↗</a></div></section>
+<noscript><p class="notice">JavaScript 已停用。課程、框架比較與初始消息仍可閱讀；篩選、收藏與進度保存需要啟用 JavaScript。</p></noscript>
+<section class="personal-tools" aria-labelledby="backup-heading"><div><h2 id="backup-heading">把學習進度帶著走。</h2><p>進度與收藏僅存在這個瀏覽器，不會上傳。匯出備份即可在另一個瀏覽器繼續。</p></div><div class="backup-buttons"><button id="export" type="button" class="outline-button">匯出備份 ↓</button><label class="outline-button import-label">匯入備份 ↑<input type="file" id="import" accept="application/json,.json" class="sr-only"></label></div><p id="backup-status" role="status" aria-live="polite"></p></section>
+</main>
+<footer><div class="brand-footer">Agent Learning Radar<span>把學習，變成可以持續前進的系統。</span></div><div>研究基準 2026-10-15 · 網站產生 {{BUILD_DATE}}<br>無付費 LLM API 相依 · 官方來源 · 人工編寫課程</div></footer>
+<script type="application/json" id="app-data">{{PAYLOAD}}</script>
+</body></html>

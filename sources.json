@@ -1,0 +1,22 @@
+[
+  {"id":"openai","product":"OpenAI API","category":"model","kind":"changelog","parser":"openai","url":"https://developers.openai.com/api/docs/changelog","fetch_url":"https://developers.openai.com/api/docs/changelog.md"},
+  {"id":"claude","product":"Claude Platform","category":"model","kind":"changelog","parser":"dated_headings","url":"https://platform.claude.com/docs/en/release-notes/overview"},
+  {"id":"gemini","product":"Gemini API","category":"model","kind":"changelog","parser":"dated_headings","url":"https://ai.google.dev/gemini-api/docs/changelog"},
+  {"id":"transformers","product":"Transformers","category":"model","kind":"github","repo":"huggingface/transformers"},
+  {"id":"openai-agents","product":"OpenAI Agents SDK","category":"framework","kind":"github","repo":"openai/openai-agents-python"},
+  {"id":"claude-agent","product":"Claude Agent SDK","category":"framework","kind":"github","repo":"anthropics/claude-agent-sdk-python"},
+  {"id":"langgraph","product":"LangGraph","category":"framework","kind":"github","repo":"langchain-ai/langgraph"},
+  {"id":"deepagents","product":"Deep Agents","category":"framework","kind":"github","repo":"langchain-ai/deepagents"},
+  {"id":"adk","product":"Google ADK","category":"framework","kind":"github","repo":"google/adk-python"},
+  {"id":"microsoft","product":"Microsoft Agent Framework","category":"framework","kind":"github","repo":"microsoft/agent-framework"},
+  {"id":"pydantic-ai","product":"Pydantic AI","category":"framework","kind":"github","repo":"pydantic/pydantic-ai"},
+  {"id":"crewai","product":"CrewAI","category":"framework","kind":"github","repo":"crewAIInc/crewAI"},
+  {"id":"mcp","product":"MCP","category":"protocol","kind":"atom","url":"https://blog.modelcontextprotocol.io/index.xml","homepage":"https://modelcontextprotocol.io/specification/latest"},
+  {"id":"a2a","product":"A2A","category":"protocol","kind":"github","repo":"a2aproject/A2A"},
+  {"id":"llamaindex","product":"LlamaIndex","category":"rag","kind":"github","repo":"run-llama/llama_index"},
+  {"id":"qdrant","product":"Qdrant","category":"rag","kind":"github","repo":"qdrant/qdrant"},
+  {"id":"langfuse","product":"Langfuse","category":"evaluation","kind":"github","repo":"langfuse/langfuse"},
+  {"id":"promptfoo","product":"Promptfoo","category":"evaluation","kind":"github","repo":"promptfoo/promptfoo"},
+  {"id":"ollama","product":"Ollama","category":"deployment","kind":"github","repo":"ollama/ollama"},
+  {"id":"vllm","product":"vLLM","category":"deployment","kind":"github","repo":"vllm-project/vllm"}
+]

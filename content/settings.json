@@ -1,0 +1,8 @@
+{
+  "title":"Agent Learning Radar",
+  "baseline":"2026-10-15",
+  "site_url":"https://bobtsengusig.github.io/agent-learning-radar/",
+  "repository":"https://github.com/bobtsengusig/agent-learning-radar",
+  "categories":{"model":"模型與 API","framework":"Agent 框架","protocol":"協定","rag":"RAG 與資料","evaluation":"評估與觀測","deployment":"本地推論與部署"},
+  "release_types":{"release":"正式版本","prerelease":"預覽版本","feature":"新功能","update":"更新","deprecation":"淘汰／遷移","announcement":"官方消息"}
+}
