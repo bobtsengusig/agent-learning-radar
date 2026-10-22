@@ -2,6 +2,103 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "deepagents:420245752",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "deepagents==0.7.30",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents%3D%3D0.7.30",
+      "published_at": "2026-10-22T02:27:00Z",
+      "source_body_hash": "af43fa9f8046de82ed58658161c55371e38957dd9ddff4e3b24295a228c563a0",
+      "keywords": [],
+      "excerpt": "### Features - Async subagent follow-ups can now queue without interrupting active work (#7082). - Added `notify_parent` (#7132) and `webhook` (#7072) to `AsyncSubAgent`. ###…",
+      "version": "deepagents==0.7.30",
+      "release_type": "release",
+      "content_hash": "5aa27be811ba7199774e6403a03e873d95d2b8a345be6907af5ea4438eaca81f",
+      "first_seen_at": "2026-10-22T04:58:14Z",
+      "updated_at": "2026-10-22T04:58:14Z",
+      "revision_count": 0
+    },
+    {
+      "id": "ollama:420047436",
+      "source_id": "ollama",
+      "product": "Ollama",
+      "category": "deployment",
+      "title": "v0.40.9",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.9-rc1",
+      "published_at": "2026-10-22T01:33:10Z",
+      "source_body_hash": "aede9965bca64532aa2b9d970ff8314d02cd7b7c0aa7bd9778d1de2c633f99b2",
+      "keywords": [
+        "llama.cpp"
+      ],
+      "excerpt": "## What's Changed - llama.cpp update **Full Changelog**: https://github.com/ollama/ollama/compare/v0.40.8...v0.40.9-rc0",
+      "version": "v0.40.9-rc1",
+      "release_type": "prerelease",
+      "content_hash": "35b9670fe73d78bec3338803c0c3a7cf212cc706a1d48a602d0c08b69fa11f40",
+      "first_seen_at": "2026-10-22T04:58:14Z",
+      "updated_at": "2026-10-22T04:58:14Z",
+      "revision_count": 0
+    },
+    {
+      "id": "claude-agent:420141099",
+      "source_id": "claude-agent",
+      "product": "Claude Agent SDK",
+      "category": "framework",
+      "title": "v0.2.171",
+      "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.171",
+      "published_at": "2026-10-21T23:06:54Z",
+      "source_body_hash": "85c821cb3a74bcbb0c8a50e16851eac112efa41ce341bb38436145a110ba8435",
+      "keywords": [
+        "claude",
+        "claude-agent-sdk"
+      ],
+      "excerpt": "### Internal/Other Changes - Updated bundled Claude CLI to version 2.1.307 --- **PyPI:** https://pypi.org/project/claude-agent-sdk/0.2.171/ ```bash pip install claude-agent-sdk==0.…",
+      "version": "v0.2.171",
+      "release_type": "release",
+      "content_hash": "9c4de3f48329ac89551e3b5ef28b4b4e9ce4ad4c38f6bb0cbb82dff757076b13",
+      "first_seen_at": "2026-10-22T04:58:14Z",
+      "updated_at": "2026-10-22T04:58:14Z",
+      "revision_count": 0
+    },
+    {
+      "id": "ollama:419777982",
+      "source_id": "ollama",
+      "product": "Ollama",
+      "category": "deployment",
+      "title": "v0.40.8",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
+      "published_at": "2026-10-21T16:20:30Z",
+      "source_body_hash": "d8f682b1df75a747ee2bbcd07b7a51681cf1adcd1e2df87ddf94cfecdbdb70f8",
+      "keywords": [],
+      "excerpt": "## Recursive Flint Flint brings Recursive's coding model to Ollama. It is designed for the work coding agents do across a repository: understanding unfamiliar…",
+      "version": "v0.40.8",
+      "release_type": "release",
+      "content_hash": "5171b46c07a72179085e9bf1a62270182bbae9963b369cecb490be55b0dc7597",
+      "first_seen_at": "2026-10-22T04:58:14Z",
+      "updated_at": "2026-10-22T04:58:14Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langfuse:419478486",
+      "source_id": "langfuse",
+      "product": "Langfuse",
+      "category": "evaluation",
+      "title": "v4.67.0",
+      "url": "https://github.com/langfuse/langfuse/releases/tag/v4.67.0",
+      "published_at": "2026-10-21T11:31:17Z",
+      "source_body_hash": "e4bc2b7c122a7f75d7ce763be120ebe3043bb6c1180bcb7b4ea17d0da57ef6e0",
+      "keywords": [
+        "gemini-3.5"
+      ],
+      "excerpt": "## What's Changed ### Features * feat(skills): simplify CLI install and import setup by @tobi12345 in https://github.com/langfuse/langfuse/pull/19128 * feat(web): add name search a…",
+      "version": "v4.67.0",
+      "release_type": "release",
+      "content_hash": "4fe49398b5036edb097851426fe40f28b74a11f72edb47eae7c9cdde98d3d241",
+      "first_seen_at": "2026-10-22T04:58:14Z",
+      "updated_at": "2026-10-22T04:58:14Z",
+      "revision_count": 0
+    },
+    {
       "id": "pydantic-ai:419164345",
       "source_id": "pydantic-ai",
       "product": "Pydantic AI",
@@ -64,6 +161,42 @@
       "content_hash": "ec034c0ff46541d617d0f3d1e3eeb25aabf0662a91f487a76a2518fced30fc3e",
       "first_seen_at": "2026-10-21T04:57:29Z",
       "updated_at": "2026-10-21T04:57:29Z",
+      "revision_count": 0
+    },
+    {
+      "id": "openai:2026-10-21",
+      "source_id": "openai",
+      "product": "OpenAI API",
+      "category": "model",
+      "title": "Feature You can now choose which service tiers projects can use in Platform settings. Organization settings can restrict service t",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "published_at": "2026-10-21T00:00:00Z",
+      "source_body_hash": "b4807ecd11d3b5f4d25d02a7d186d8bd01063bbdb4ce210b26126e77c3ec2976",
+      "keywords": [],
+      "excerpt": "Feature You can now choose which service tiers projects can use in Platform settings. Organization settings can restrict service tiers for all projects. See…",
+      "version": null,
+      "release_type": "update",
+      "content_hash": "86a79f78de7f03d505916a5114c3f2e57b40c10db1549bd56abb41a33ed86949",
+      "first_seen_at": "2026-10-22T04:58:14Z",
+      "updated_at": "2026-10-22T04:58:14Z",
+      "revision_count": 0
+    },
+    {
+      "id": "claude:2026-10-21",
+      "source_id": "claude",
+      "product": "Claude Platform",
+      "category": "model",
+      "title": "We've released API version 2026-10-21 . Migrating to API version 2026-10-21 shows how to upgrade. We've released new versions of t",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-21-2026",
+      "published_at": "2026-10-21T00:00:00Z",
+      "source_body_hash": "c80d6902e991656d67e39e3e93785b685ba659f7e9164bb195030d6e37f7b9cd",
+      "keywords": [],
+      "excerpt": "We've released API version 2026-10-21 . Migrating to API version 2026-10-21 shows how to upgrade. We've released new versions of the client SDKs and…",
+      "version": null,
+      "release_type": "feature",
+      "content_hash": "f312f30c6ed0c2f530df71ac2d88d26d1243e43a0a7520e12c411a4288ed3f48",
+      "first_seen_at": "2026-10-22T04:58:14Z",
+      "updated_at": "2026-10-22T04:58:14Z",
       "revision_count": 0
     },
     {
@@ -231,17 +364,17 @@
       "title": "Inference hooks are out of beta for Claude Enterprise organizations. We've launched user profiles , so you can tell Anthropic whic",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026-2",
       "published_at": "2026-10-20T00:00:00Z",
-      "source_body_hash": "9feda752bb8a899b27fba3c6ac1dd5ef35b2642a44ef0f5381f7e55958ab945f",
+      "source_body_hash": "ccc9f5f7bb64377df433ee4e3a5444e95bc93aaca60a96f3670673c938b02a56",
       "keywords": [
         "claude"
       ],
       "excerpt": "Inference hooks are out of beta for Claude Enterprise organizations. We've launched user profiles , so you can tell Anthropic which of your end…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "fedc66875c87c0e54ab8af0097905bec1abeb7d3600b293bdb4b48408150f310",
+      "content_hash": "9da6918cea5eaa3731b73341ea01f762e8ec1ab7315e05c2b6ebce46b73413cb",
       "first_seen_at": "2026-10-21T04:57:29Z",
-      "updated_at": "2026-10-21T04:57:29Z",
-      "revision_count": 0
+      "updated_at": "2026-10-22T04:58:14Z",
+      "revision_count": 1
     },
     {
       "id": "transformers:417566864",
@@ -1011,17 +1144,17 @@
       "title": "We've launched OpenTelemetry export in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your obs",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-14-2026",
       "published_at": "2026-10-14T00:00:00Z",
-      "source_body_hash": "7eebfecdd95333e95f552329b961a1d70540f38da06870df5a5a9cb8d1c9f997",
+      "source_body_hash": "e5b49b255d80e0af2f905b6e6c50582caa0db3fe4b6a21e6eb8c826046a2f04f",
       "keywords": [
         "claude"
       ],
-      "excerpt": "We've launched OpenTelemetry export in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your observability backend. The Claude…",
+      "excerpt": "We've launched OpenTelemetry export in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your observability platform. The Claude…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "49ae2da7ad0a92620b8da02db197154fd2f3352214d248584884a0e41d943a0b",
+      "content_hash": "1c85fa215095895ba6fba20fc2c26534b8384e76ffcde0b3fa6cf822223ee074",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-22T04:58:14Z",
+      "revision_count": 1
     },
     {
       "id": "pydantic-ai:412197101",
@@ -11606,160 +11739,160 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
-      "items_in_window": 29,
+      "items_in_window": 30,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 32,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 14,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 10,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "openai-agents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 15,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
-      "items_in_window": 43,
+      "items_in_window": 44,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 29,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
-      "items_in_window": 95,
+      "items_in_window": 93,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 17,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
-      "items_in_window": 22,
+      "items_in_window": 20,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
-      "items_in_window": 57,
+      "items_in_window": 56,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 24,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 3,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 3,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
-      "items_in_window": 95,
+      "items_in_window": 93,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 11,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
-      "items_in_window": 31,
+      "items_in_window": 33,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-10-21T04:57:29Z",
-      "last_success_at": "2026-10-21T04:57:29Z",
+      "last_attempt_at": "2026-10-22T04:58:14Z",
+      "last_success_at": "2026-10-22T04:58:14Z",
       "error": null,
       "items_in_window": 8,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
@@ -12452,6 +12585,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-10-21T04:57:29Z",
-  "last_success_at": "2026-10-21T04:57:29Z"
+  "last_attempt_at": "2026-10-22T04:58:14Z",
+  "last_success_at": "2026-10-22T04:58:14Z"
 }
