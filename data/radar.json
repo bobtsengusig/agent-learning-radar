@@ -2,6 +2,341 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "pydantic-ai:422484978",
+      "source_id": "pydantic-ai",
+      "product": "Pydantic AI",
+      "category": "framework",
+      "title": "v2.61.0 (2026-10-23)",
+      "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.61.0",
+      "published_at": "2026-10-24T03:13:40Z",
+      "source_body_hash": "671b43de6108a7c45a5bb1d7031f33778c3fbf8e0e12a5bc8e57ecea7e03a622",
+      "keywords": [
+        "gemini",
+        "gemini-2.5-flash-image",
+        "gpt-5.6",
+        "gpt-live"
+      ],
+      "excerpt": "## What's Changed ### ⚠️ Compatibility Notes * Warn when a provider-specific thinking setting from a broader scope overrides `thinking` by @dsfaccini in https://github.com/pydantic…",
+      "version": "v2.61.0",
+      "release_type": "release",
+      "content_hash": "5bcc6d90b45694247b97de60b730423cfc74a6f94e967547fde24b73034f169d",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "crewai:422454903",
+      "source_id": "crewai",
+      "product": "CrewAI",
+      "category": "framework",
+      "title": "1.15.30",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.30",
+      "published_at": "2026-10-24T01:56:04Z",
+      "source_body_hash": "5572365319511e3136db44d4272ea0ce08012c97c219ae92b6294a155684182f",
+      "keywords": [],
+      "excerpt": "## What's Changed ### Bug Fixes - Fix AGENTS.md to start the login process while evaluating and stop after three rounds. ### Documentation -…",
+      "version": "1.15.30",
+      "release_type": "release",
+      "content_hash": "742b9672240b6fd8e7860dd1e6bfff1c4627a0116751e050f0f60a82faa0a023",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langgraph:422436760",
+      "source_id": "langgraph",
+      "product": "LangGraph",
+      "category": "framework",
+      "title": "langgraph==1.2.17",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.17",
+      "published_at": "2026-10-24T01:08:05Z",
+      "source_body_hash": "4b9dc43de97fd6ddaab5325f94b002e0f1aea516f50a3b2575fda618c27b1cc1",
+      "keywords": [],
+      "excerpt": "Changes since 1.2.16 * release(langgraph): 1.2.17 (#9418) * fix(langgraph): apply an explicit recursion_limit equal to the default (#9417) * fix(langgraph): keep the caller's names…",
+      "version": "1.2.17",
+      "release_type": "release",
+      "content_hash": "d71397cf195bea02a7bebb9e5c892d0455e065187fe221ace1c9b098f0809614",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "ollama:422414238",
+      "source_id": "ollama",
+      "product": "Ollama",
+      "category": "deployment",
+      "title": "v0.40.11",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.11-rc0",
+      "published_at": "2026-10-24T00:30:13Z",
+      "source_body_hash": "678130216677e40bffc93c48269af56a0b4b1c40756c63dc93d1d2c7f81f7323",
+      "keywords": [
+        "llama.cpp",
+        "qwen3coder"
+      ],
+      "excerpt": "## What's Changed * qwen3coder: preserve literal function closing tags in parameters by @hoyyeva in https://github.com/ollama/ollama/pull/19228 * launch: use allocated context for …",
+      "version": "v0.40.11-rc0",
+      "release_type": "prerelease",
+      "content_hash": "2ed058bff7b5b6d24d67970be43d86506c2983ec5d7b8727c2c31457fc3dfd3f",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "claude-agent:422418412",
+      "source_id": "claude-agent",
+      "product": "Claude Agent SDK",
+      "category": "framework",
+      "title": "v0.2.174",
+      "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.174",
+      "published_at": "2026-10-24T00:24:14Z",
+      "source_body_hash": "28ebfec0084d158d5af6b847ab06e5553f18ab3707a8165cc9e1522dbd6eca75",
+      "keywords": [
+        "claude",
+        "claude-agent-sdk"
+      ],
+      "excerpt": "### Internal/Other Changes - Updated bundled Claude CLI to version 2.1.310 --- **PyPI:** https://pypi.org/project/claude-agent-sdk/0.2.174/ ```bash pip install claude-agent-sdk==0.…",
+      "version": "v0.2.174",
+      "release_type": "release",
+      "content_hash": "edf73e4651b673090e9000023f56c7966cfab030481515c6092bd6d215320d6e",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "deepagents:422326982",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "deepagents==0.7.32",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents%3D%3D0.7.32",
+      "published_at": "2026-10-23T21:30:34Z",
+      "source_body_hash": "b90662a7209c72d8e14ab25612ef16f4720eb71ac2a625bb165304ce607c71b1",
+      "keywords": [],
+      "excerpt": "### Performance Improvements - Avoid importing `langchain_anthropic` and `langchain_openai` at SDK import time (#7204, #7185). --- Internal maintainers: @mdrxy Released by: @mdrxy …",
+      "version": "deepagents==0.7.32",
+      "release_type": "release",
+      "content_hash": "ad1c7541114640c35aea421c6218a413820b904d45fd465b88413ea63cb26107",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "deepagents:422318742",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "langchain-daytona==0.0.9",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/langchain-daytona%3D%3D0.0.9",
+      "published_at": "2026-10-23T21:18:27Z",
+      "source_body_hash": "8dfc368eb7b5dce6bd063f1bc53dea01d5bd5672da20c15e6ba261b3e7f3c7fc",
+      "keywords": [],
+      "excerpt": "### Bug Fixes - Apply request timeouts and preserve partial output when a timeout occurs (#7121). --- Thanks to our community contributors: @Atharvagaur **Special…",
+      "version": "langchain-daytona==0.0.9",
+      "release_type": "release",
+      "content_hash": "1a8016c434f173933b162adac87a44d8d14defa9783e9ac26c0537b6851791b1",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "adk:422161003",
+      "source_id": "adk",
+      "product": "Google ADK",
+      "category": "framework",
+      "title": "v2.13.0",
+      "url": "https://github.com/google/adk-python/releases/tag/v2.13.0",
+      "published_at": "2026-10-23T18:08:23Z",
+      "source_body_hash": "09cca27289e488380be9ba5e3c0a438dc1d295b8e063969ac8bbc0ba75c0bf60",
+      "keywords": [
+        "claude",
+        "gemini"
+      ],
+      "excerpt": "## 2.13.0 (2026-10-22) ### Highlights This release stabilizes core features while introducing TypeSafe workflow classification, live audio interactions, MongoDB integrations, and e…",
+      "version": "v2.13.0",
+      "release_type": "release",
+      "content_hash": "2e0e694c0fbd64ab390d0555a19d171f76c2f7ee7a4170b25ae8f379f2716d9d",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "crewai:422132144",
+      "source_id": "crewai",
+      "product": "CrewAI",
+      "category": "framework",
+      "title": "1.15.29",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.29",
+      "published_at": "2026-10-23T17:35:29Z",
+      "source_body_hash": "a1571e8b2249e5442e18d767416139717c391c828f5a1cccd287a61cf2071178",
+      "keywords": [],
+      "excerpt": "## What's Changed ### Features - Add support for LiteLLM-compatible kwargs. - Implement platform application search in CLI. - Highlight action picker search in…",
+      "version": "1.15.29",
+      "release_type": "release",
+      "content_hash": "3a0d1a4de06148614fe9d081dd336ffe2b96c3f51b868c7d003fede366ec661f",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "deepagents:422106043",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "deepagents-code==0.2.1",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents-code%3D%3D0.2.1",
+      "published_at": "2026-10-23T17:05:56Z",
+      "source_body_hash": "ec69c0c9f65c093450d6852400e2d89a80e5ea63a7789c7acea614dbf5489d9d",
+      "keywords": [
+        "claude"
+      ],
+      "excerpt": "### Features - Support skill-scoped MCP tools (#7010). - Default the Anthropic Auto classifier to Claude Sonnet 5.5 (#7163). ### Bug Fixes - Automatically…",
+      "version": "deepagents-code==0.2.1",
+      "release_type": "release",
+      "content_hash": "fe4febd215decaf8a1144f627679efb4c264a19ce4bd197bd3039784938e0cb9",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "deepagents:422068017",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "deepagents==0.7.31",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents%3D%3D0.7.31",
+      "published_at": "2026-10-23T16:27:17Z",
+      "source_body_hash": "93a1ad2d1d1c4b526cf8263f371b4c407b07577ca3c3fbed6c5a2b0d5350cc50",
+      "keywords": [],
+      "excerpt": "### Features - Expose execution output retention metadata in tracing (#6876). ### Bug Fixes - Omit async task IDs from user replies by default…",
+      "version": "deepagents==0.7.31",
+      "release_type": "release",
+      "content_hash": "228e9b7f6c8250660a9d4ba2e8e30715d749bec1ca32c065b4dba5a9df2a939f",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "promptfoo:422009330",
+      "source_id": "promptfoo",
+      "product": "Promptfoo",
+      "category": "evaluation",
+      "title": "0.125.0",
+      "url": "https://github.com/promptfoo/promptfoo/releases/tag/0.125.0",
+      "published_at": "2026-10-23T15:32:01Z",
+      "source_body_hash": "478aef8000a4189b145aebf0515ff0f159297057189cc87fea3c3c165de4d0af",
+      "keywords": [
+        "claude",
+        "gemini"
+      ],
+      "excerpt": "## 0.125.0 (2026-10-23) ### ⚠ BREAKING CHANGES * **deps:** make jks-js an optional peer dependency (#11739) * **providers:** make Claude Agent and Codex SDKs…",
+      "version": "0.125.0",
+      "release_type": "release",
+      "content_hash": "e1fee1a98c47b88eae23a44e6c5c1adcd17fb9f50967abdc3f7e596650a6ded9",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "ollama:421968618",
+      "source_id": "ollama",
+      "product": "Ollama",
+      "category": "deployment",
+      "title": "v0.40.10",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
+      "published_at": "2026-10-23T15:03:59Z",
+      "source_body_hash": "9b68a4ffe95dae011fdcb21a93588f75526ecf317e10c34c59725d08921f507a",
+      "keywords": [
+        "gemma"
+      ],
+      "excerpt": "## NVIDIA Nemotron 3.5 Bolt E4B Nemotron 3.5 Bolt E4B is NVIDIA’s smaller, Gemma 4-based vision-language model for fast local conversations, image understanding, and…",
+      "version": "v0.40.10",
+      "release_type": "release",
+      "content_hash": "48d39ab76ae312e6bc08125af5b158c1950a04254b621fe7888156b29a365deb",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "microsoft:421945020",
+      "source_id": "microsoft",
+      "product": "Microsoft Agent Framework",
+      "category": "framework",
+      "title": "dotnet-1.26.0",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.26.0",
+      "published_at": "2026-10-23T14:32:13Z",
+      "source_body_hash": "3c992547302180832fbbcc707ab76c3065d48603ecc3a06bacf1d1345c83388d",
+      "keywords": [
+        "chat",
+        "chatclient",
+        "chatkit",
+        "chatresponse",
+        "gemini"
+      ],
+      "excerpt": "## Changes: * 9c8a3514a15a702f81bfda456d80c7ccaa4d2712 Update package versions for release (#9650) * c3b9f22d64fd86e8133395555a1fa4aa22f745e0 Add ACGS to the Python community proje…",
+      "version": "dotnet-1.26.0",
+      "release_type": "release",
+      "content_hash": "48d7fc6c01c9cae99d176a7347fd7d9852fb82abaf3ab7ca0750b9b5903f4623",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langgraph:421934190",
+      "source_id": "langgraph",
+      "product": "LangGraph",
+      "category": "framework",
+      "title": "langgraph-cli==0.4.38",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.38",
+      "published_at": "2026-10-23T14:22:29Z",
+      "source_body_hash": "c44b6ac484162faf2718ad8b8149457c9248bac474745330438b83ecbe9f5cb2",
+      "keywords": [],
+      "excerpt": "Changes since cli==0.4.37 * release(cli): 0.4.38 (#9411) * feat(cli): add the priority section to langgraph.json (#9393) * chore(deps): bump uv from 0.11.15 to 0.13.4…",
+      "version": "cli==0.4.38",
+      "release_type": "release",
+      "content_hash": "68f703471af83dd7f09e0f57b4e56ce6d6ce69dbc133fba104fbf2179535173e",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langgraph:421930801",
+      "source_id": "langgraph",
+      "product": "LangGraph",
+      "category": "framework",
+      "title": "langgraph-sdk==0.4.9",
+      "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.9",
+      "published_at": "2026-10-23T14:19:24Z",
+      "source_body_hash": "f47c2a9890ace613a9c6e90211f73744aee409866bd0189ec72da09b0c29d4f3",
+      "keywords": [],
+      "excerpt": "Changes since sdk==0.4.8 * release(sdk-py): 0.4.9 (#9398) * feat(sdk-py): add Priority for thread priority settings (#9392) * chore(deps): remove precautionary third-party upper bo…",
+      "version": "sdk==0.4.9",
+      "release_type": "release",
+      "content_hash": "e31dc9eeabeee90d54689b41d2c3cf9525c3f1b69c1a077e62ff911be58b1719",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langfuse:421913508",
+      "source_id": "langfuse",
+      "product": "Langfuse",
+      "category": "evaluation",
+      "title": "v4.69.0",
+      "url": "https://github.com/langfuse/langfuse/releases/tag/v4.69.0",
+      "published_at": "2026-10-23T14:03:13Z",
+      "source_body_hash": "0fde3ba075ce42a513c165737e93b599265d44e602d3a18f68392bd8d90ccba0",
+      "keywords": [
+        "chat"
+      ],
+      "excerpt": "## What's Changed ### Features * feat(ai-gateway): show per-tool setup instructions after creating a gateway key by @wochinge in https://github.com/langfuse/langfuse/pull/19186 * f…",
+      "version": "v4.69.0",
+      "release_type": "release",
+      "content_hash": "acf55201efc95039744e2b5a007e749175be97d459d9c1523794f569cf68da8a",
+      "first_seen_at": "2026-10-24T04:44:46Z",
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 0
+    },
+    {
       "id": "pydantic-ai:421369019",
       "source_id": "pydantic-ai",
       "product": "Pydantic AI",
@@ -582,20 +917,23 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "Inference hooks are out of beta for Claude Enterprise organizations. We've launched user profiles , so you can tell Anthropic whic",
-      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026-2",
+      "title": "The Claude Tag API is available in beta for Claude Enterprise organizations with the experimental-claude-tag-2026-10-21 beta heade",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026",
       "published_at": "2026-10-20T00:00:00Z",
-      "source_body_hash": "ccc9f5f7bb64377df433ee4e3a5444e95bc93aaca60a96f3670673c938b02a56",
+      "source_body_hash": "247059424afc12eec489604abfa716cf54fc519289aaac8008ff739eeda6821f",
       "keywords": [
-        "claude"
+        "claude",
+        "claude-tag-2026-10-21",
+        "claude.ai",
+        "claude_tag"
       ],
-      "excerpt": "Inference hooks are out of beta for Claude Enterprise organizations. We've launched user profiles , so you can tell Anthropic which of your end…",
+      "excerpt": "The Claude Tag API is available in beta for Claude Enterprise organizations with the experimental-claude-tag-2026-10-21 beta header. Its /v1/organizations/claude_tag/ endpoints rea…",
       "version": null,
-      "release_type": "feature",
-      "content_hash": "9da6918cea5eaa3731b73341ea01f762e8ec1ab7315e05c2b6ebce46b73413cb",
+      "release_type": "update",
+      "content_hash": "e5e3fef501975d8467758c2511058bb144e6edcbaefbae2bd4cc51e29b00d1ef",
       "first_seen_at": "2026-10-21T04:57:29Z",
-      "updated_at": "2026-10-22T04:58:14Z",
-      "revision_count": 1
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 2
     },
     {
       "id": "transformers:417566864",
@@ -3293,7 +3631,7 @@
       "title": "We've launched Claude Sonnet 5.5 ( claude-sonnet-5-5 ). It's available on the Claude API, Claude in Amazon Bedrock , Claude Platfo",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-28-2026",
       "published_at": "2026-09-28T00:00:00Z",
-      "source_body_hash": "cb8d8cfb202467b43ce7883e8a1271c8b57190b8f5c43a103d89fa6a0f4c2b22",
+      "source_body_hash": "e597bfbbea1d16086ba6b1de6c1c6d035672ddee06daaa8a3974d1bd00a74fb6",
       "keywords": [
         "claude",
         "claude-sonnet-5-5"
@@ -3301,10 +3639,10 @@
       "excerpt": "We've launched Claude Sonnet 5.5 ( claude-sonnet-5-5 ). It's available on the Claude API, Claude in Amazon Bedrock , Claude Platform on AWS ,…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "b0abc775b4914c9272d1d8b861795889fbf74086c2f44ea48356ac56441dd0a6",
+      "content_hash": "a1c9ece26813789ab52c4b41a33cbe10a489d2f0f7f3cbac50cfa46564c95251",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 1
     },
     {
       "id": "pydantic-ai:396978405",
@@ -4116,7 +4454,7 @@
       "title": "We've launched Claude Opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. It has a 1M token",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-22-2026",
       "published_at": "2026-09-22T00:00:00Z",
-      "source_body_hash": "95ee403d156a4140abd783229e87c1905a54c9755ceb5840bb8ed93100709818",
+      "source_body_hash": "5b4451a304bfbb8f7187ec323bef42c760915796d4eb8575b9ac600f37c8d8c3",
       "keywords": [
         "claude",
         "claude-opus-5-5"
@@ -4124,10 +4462,10 @@
       "excerpt": "We've launched Claude Opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. It has a 1M token context window…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "40b4da931e944c3c3b2a9547d32f53e7aae990ebfba452283b3007b40aa09c04",
+      "content_hash": "505d1896193559d153cebab49589592023eb7152d9d641ec01d5665a44efd1b0",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 1
     },
     {
       "id": "langfuse:393173891",
@@ -6175,7 +6513,7 @@
       "title": "We've launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge w",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
       "published_at": "2026-09-01T00:00:00Z",
-      "source_body_hash": "6ed05de7876bb7464b832856a628c19a3bb1b510a601fa0c79feec1ac52292e3",
+      "source_body_hash": "24eaf36743eac920d03685fe842fff41e597ff0e5c08380626d4a218e30e83d2",
       "keywords": [
         "claude",
         "claude-fable-5-1",
@@ -6184,10 +6522,10 @@
       "excerpt": "We've launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "a064e5ecbe65b9bf81ff18880341a4b0c51fb2704b4d3ce8ab032ab8a2b331fc",
+      "content_hash": "d784d510d895fbda03c61d2ce927157972c7e86f1f7925c3e2842f3e776d1052",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 1
     },
     {
       "id": "claude-agent:380018468",
@@ -6749,17 +7087,17 @@
       "title": "In Python SDK 1.2.0, TypeScript SDK 0.122.0, Go SDK 1.68.0, Java SDK 2.59.0, Ruby SDK 1.67.0, and C# SDK 12.44.0, client.beta.file",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-27-2026",
       "published_at": "2026-08-27T00:00:00Z",
-      "source_body_hash": "873fac835c2b6451fb08455290dfa93029882e6dedd86c93d86f479808b25ed7",
+      "source_body_hash": "3ba7c4998434b43e3f45cf0e0a4d14fe24b7dd07f913fedf8e7a247b783e2c16",
       "keywords": [
         "claude"
       ],
       "excerpt": "In Python SDK 1.2.0, TypeScript SDK 0.122.0, Go SDK 1.68.0, Java SDK 2.59.0, Ruby SDK 1.67.0, and C# SDK 12.44.0, client.beta.files and client.beta.skills no…",
       "version": null,
       "release_type": "update",
-      "content_hash": "f89aa5372f8443cb94eb73c306f38ccb36cb2d469210ec09e6cad73f0714f000",
+      "content_hash": "1a5861caff283e522d7b4264e9af46cc9d3c5c857172e44af25231c972443598",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 1
     },
     {
       "id": "adk:377474785",
@@ -9041,20 +9379,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "The introductory pricing for Claude Sonnet 5 ($2 / $10 per MTok) is now the standard price: the previously scheduled increase to $",
+      "title": "The introductory pricing for Claude Sonnet 5 ($2 / $10 USD per MTok) is now the standard price: the previously scheduled increase",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-10-2026",
       "published_at": "2026-08-10T00:00:00Z",
-      "source_body_hash": "8cf6f0dfa60ae38a06ad1204d050bbf362a538cfd401b8ca4c1a37c300a55269",
+      "source_body_hash": "33819d22ee96d8017b9a43be6f6225285710b0f3c7b2d09fcb9eb5699fc74333",
       "keywords": [
         "claude"
       ],
-      "excerpt": "The introductory pricing for Claude Sonnet 5 ($2 / $10 per MTok) is now the standard price: the previously scheduled increase to $3 /…",
+      "excerpt": "The introductory pricing for Claude Sonnet 5 ($2 / $10 USD per MTok) is now the standard price: the previously scheduled increase to $3…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "8d0f98f16ac96e2cc21afcefc02d18e72c0d4e159219cfa7e8d86dfc8cfe275e",
+      "content_hash": "59f954612f7edaa50184562571dc669af51357d8c31c5399f0e2fc2c84682aa9",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-24T04:44:46Z",
+      "revision_count": 1
     },
     {
       "id": "crewai:367323773",
@@ -11960,160 +12298,160 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 31,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 33,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 14,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 10,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "openai-agents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 15,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 44,
+      "items_in_window": 45,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 29,
+      "items_in_window": 32,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 94,
+      "items_in_window": 98,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 17,
+      "items_in_window": 18,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 21,
+      "items_in_window": 22,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 56,
+      "items_in_window": 57,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 23,
+      "items_in_window": 25,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 3,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 4,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 93,
+      "items_in_window": 94,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 11,
+      "items_in_window": 12,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
-      "items_in_window": 32,
+      "items_in_window": 34,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-10-23T04:59:33Z",
-      "last_success_at": "2026-10-23T04:59:33Z",
+      "last_attempt_at": "2026-10-24T04:44:46Z",
+      "last_success_at": "2026-10-24T04:44:46Z",
       "error": null,
       "items_in_window": 8,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
@@ -12806,6 +13144,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-10-23T04:59:33Z",
-  "last_success_at": "2026-10-23T04:59:33Z"
+  "last_attempt_at": "2026-10-24T04:44:46Z",
+  "last_success_at": "2026-10-24T04:44:46Z"
 }
