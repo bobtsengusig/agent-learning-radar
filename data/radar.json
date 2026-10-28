@@ -2,6 +2,126 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "pydantic-ai:426149674",
+      "source_id": "pydantic-ai",
+      "product": "Pydantic AI",
+      "category": "framework",
+      "title": "v2.63.0 (2026-10-27)",
+      "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.63.0",
+      "published_at": "2026-10-28T00:55:47Z",
+      "source_body_hash": "6abec565074f4e7832cdac34eebb3e0908dc4fffa22ff300903b008754acd995",
+      "keywords": [
+        "claude",
+        "gemini",
+        "gemini-robotics-er",
+        "gpt-6.1-terra",
+        "gpt-live",
+        "mistralai",
+        "mistralmodel"
+      ],
+      "excerpt": "## What's Changed ### ⚠️ Compatibility Notes * Default `CodeMode` to `dynamic_catalog=True`, so a revealed tool is appended instead of rewriting the cached prompt…",
+      "version": "v2.63.0",
+      "release_type": "release",
+      "content_hash": "83ad8c74a1e03cde90d75c9aa591b5e017d0ae12dc6a60c5f37528aafaf10d28",
+      "first_seen_at": "2026-10-28T05:51:31Z",
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 0
+    },
+    {
+      "id": "crewai:426082146",
+      "source_id": "crewai",
+      "product": "CrewAI",
+      "category": "framework",
+      "title": "1.15.32",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.32",
+      "published_at": "2026-10-27T23:04:05Z",
+      "source_body_hash": "0a7515f1b0e960d6e5890db8f97ee96107c7bfe6e07881d9bfc276615c1013e6",
+      "keywords": [],
+      "excerpt": "## What's Changed ### Bug Fixes - Fix failing flaky tests ### Documentation - Update snapshot and changelog for v1.15.31 ## Contributors @lorenzejay",
+      "version": "1.15.32",
+      "release_type": "release",
+      "content_hash": "fc0c1a6900ac71a4c279cc192c68e451409bec76cdca3f4b27777af039d23a22",
+      "first_seen_at": "2026-10-28T05:51:31Z",
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 0
+    },
+    {
+      "id": "crewai:426011239",
+      "source_id": "crewai",
+      "product": "CrewAI",
+      "category": "framework",
+      "title": "1.15.31",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.31",
+      "published_at": "2026-10-27T21:36:29Z",
+      "source_body_hash": "af24bb561e5df47659204395c25099a1c815712b630fe8636605e8313df45830",
+      "keywords": [
+        "gpt-6"
+      ],
+      "excerpt": "## What's Changed ### Features - Support conversational flow context compaction. ### Bug Fixes - Update vulnerable audit dependencies. - Stop sending 'stop' to…",
+      "version": "1.15.31",
+      "release_type": "release",
+      "content_hash": "4189dc249d756c5ac175f2706a5048d25d9e4ecd91157713e54334d21ed422b1",
+      "first_seen_at": "2026-10-28T05:51:31Z",
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 0
+    },
+    {
+      "id": "deepagents:425749890",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "langchain-quickjs==0.3.11",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/langchain-quickjs%3D%3D0.3.11",
+      "published_at": "2026-10-27T17:02:22Z",
+      "source_body_hash": "4aa1936e513196ec91a80cb8701c3cdf91dadcc63bf37dc9850d12bc48e466e6",
+      "keywords": [],
+      "excerpt": "### Bug Fixes - Defer QuickJS runtime initialization until evaluation (#7301). --- Internal maintainers: @mdrxy Released by: @mdrxy Git log since langchain-quickjs==0.3.10 This com…",
+      "version": "langchain-quickjs==0.3.11",
+      "release_type": "release",
+      "content_hash": "07cd8103356316b720a6efd9c572249b989d26efae619d8ad4f6b77e52564653",
+      "first_seen_at": "2026-10-28T05:51:31Z",
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langfuse:425609971",
+      "source_id": "langfuse",
+      "product": "Langfuse",
+      "category": "evaluation",
+      "title": "v4.71.0",
+      "url": "https://github.com/langfuse/langfuse/releases/tag/v4.71.0",
+      "published_at": "2026-10-27T15:03:06Z",
+      "source_body_hash": "f18f6647160b93a82dc57f3e966fc7fb50f45bda3832823eddfa7ec2f1f42b7f",
+      "keywords": [
+        "gpt-6.1-terra"
+      ],
+      "excerpt": "## What's Changed ### Features * feat(ai-gateway): record model, key owner, byte and upstream error facts on generations by @hassiebp in https://github.com/langfuse/langfuse/pull/1…",
+      "version": "v4.71.0",
+      "release_type": "release",
+      "content_hash": "e4c93d52dcf6a3d942eaa2b9f5b9efe9229c081b3d28b9a4c8f0e3d83b29fcd8",
+      "first_seen_at": "2026-10-28T05:51:31Z",
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langfuse:425582225",
+      "source_id": "langfuse",
+      "product": "Langfuse",
+      "category": "evaluation",
+      "title": "v3.225.15",
+      "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.15",
+      "published_at": "2026-10-27T14:40:56Z",
+      "source_body_hash": "5d3a9c4958d864674e3c4e87d359d7275fc034ada15e794bce24c1606e4ddd10",
+      "keywords": [],
+      "excerpt": "## What's Changed * fix(web): check that an invite's project belongs to the organization (v3 backport of #19404) by @Steffen911 in https://github.com/langfuse/langfuse/pull/19408 *…",
+      "version": "v3.225.15",
+      "release_type": "release",
+      "content_hash": "f2b1f2f5db64e54dca4b63549a8d9a61f1e4183be64d48997b0bc27a660cb3b0",
+      "first_seen_at": "2026-10-28T05:51:31Z",
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 0
+    },
+    {
       "id": "pydantic-ai:424978603",
       "source_id": "pydantic-ai",
       "product": "Pydantic AI",
@@ -33,19 +153,40 @@
       "product": "Ollama",
       "category": "deployment",
       "title": "v0.40.12",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12-rc0",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12",
       "published_at": "2026-10-27T00:07:12Z",
-      "source_body_hash": "769cc55043c803a86ede55e63732e344d5c5a22aa34cf0d6eb14e83b687de226",
+      "source_body_hash": "b8589ed7190322c65d6bbbf22c658877a52b8f20f26047d5da5b704b3c492fdf",
       "keywords": [
         "gemma",
         "llama.cpp"
       ],
-      "excerpt": "## What's Changed * mlx: preserve small-image detail for compact Gemma 4 vision towers by @dhiltgen in https://github.com/ollama/ollama/pull/19247 * MLX, MLX-C: version bump -…",
-      "version": "v0.40.12-rc0",
-      "release_type": "prerelease",
-      "content_hash": "38cfe0b5e0f3d9626086ccf4fdd5b1531312626c3bba88740fa4efc95dbc333b",
+      "excerpt": "## Liquid AI LFM3 LFM3 is Liquid AI's new family of small models built for local agents, tool calling, and structured output, on Liquid's…",
+      "version": "v0.40.12",
+      "release_type": "release",
+      "content_hash": "43d5e8594f2049998d76b58e0c83856932745c6b297f1408847fc4e5450b8333",
       "first_seen_at": "2026-10-27T05:13:18Z",
-      "updated_at": "2026-10-27T05:13:18Z",
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
+    },
+    {
+      "id": "gemini:2026-10-27",
+      "source_id": "gemini",
+      "product": "Gemini API",
+      "category": "model",
+      "title": "Gemini API CLI ( gemini-api ) beta : Released the Gemini API CLI ( gemini-api ), a stateless, zero-dependency command-line client",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog#10-27-2026",
+      "published_at": "2026-10-27T00:00:00Z",
+      "source_body_hash": "40a50e89de7a9a2ee261deff3190e673e269256d012f506b18d12565d7b7869a",
+      "keywords": [
+        "gemini",
+        "gemini-api"
+      ],
+      "excerpt": "Gemini API CLI ( gemini-api ) beta : Released the Gemini API CLI ( gemini-api ), a stateless, zero-dependency command-line client for AI coding…",
+      "version": null,
+      "release_type": "feature",
+      "content_hash": "fada3ff6bb320c002cba017dac3258c6d9e9e2fea713ddef5765eec38838838d",
+      "first_seen_at": "2026-10-28T05:51:31Z",
+      "updated_at": "2026-10-28T05:51:31Z",
       "revision_count": 0
     },
     {
@@ -943,20 +1084,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've launched Claude Models on Google Cloud (Anthropic managed) , the Claude API operated by Anthropic and reached through your G",
+      "title": "We’ve launched Claude Models on Google Cloud (Anthropic managed) , the Claude API operated by Anthropic and reached through your G",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
       "published_at": "2026-10-22T00:00:00Z",
-      "source_body_hash": "d8db7fe709fa629f4d25b8c13405e7f5203200c86fd469d95f501d7290aac5ff",
+      "source_body_hash": "ca106580e1e366169a57c0a97aab1f4396eab88812089f65f4748deff4122e90",
       "keywords": [
         "claude"
       ],
-      "excerpt": "We've launched Claude Models on Google Cloud (Anthropic managed) , the Claude API operated by Anthropic and reached through your Google Cloud project. Google…",
+      "excerpt": "We’ve launched Claude Models on Google Cloud (Anthropic managed) , the Claude API operated by Anthropic and reached through your Google Cloud project. Google…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "cdecbe7b5251a9d61723518ea771fd39b93a816f6ad02c5dcd142afcc6493d8d",
+      "content_hash": "d6726bde7bf94d12c183353dc5f8b316d2af581eaea6310e7aab469064bea7e6",
       "first_seen_at": "2026-10-23T04:59:33Z",
-      "updated_at": "2026-10-23T04:59:33Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "claude-agent:420141099",
@@ -1105,18 +1246,18 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've released API version 2026-10-21 . Migrating to API version 2026-10-21 shows how to upgrade. We've released new versions of t",
+      "title": "We’ve released API version 2026-10-21 . Migrating to API version 2026-10-21 shows how to upgrade. We’ve released new versions of t",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-21-2026",
       "published_at": "2026-10-21T00:00:00Z",
-      "source_body_hash": "c80d6902e991656d67e39e3e93785b685ba659f7e9164bb195030d6e37f7b9cd",
+      "source_body_hash": "c917e694d35966627c168fde566c5289831e0f4633123be51d1d6f054f927f91",
       "keywords": [],
-      "excerpt": "We've released API version 2026-10-21 . Migrating to API version 2026-10-21 shows how to upgrade. We've released new versions of the client SDKs and…",
+      "excerpt": "We’ve released API version 2026-10-21 . Migrating to API version 2026-10-21 shows how to upgrade. We’ve released new versions of the client SDKs and…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "f312f30c6ed0c2f530df71ac2d88d26d1243e43a0a7520e12c411a4288ed3f48",
+      "content_hash": "83f605579a10aa0b7abdb96083b3e8e8f68763f22eec3e57813750c7156be2f5",
       "first_seen_at": "2026-10-22T04:58:14Z",
-      "updated_at": "2026-10-22T04:58:14Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "claude-agent:418908078",
@@ -1280,20 +1421,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "Inference hooks are out of beta for Claude Enterprise organizations. We've launched user profiles , so you can tell Anthropic whic",
+      "title": "Inference hooks are out of beta for Claude Enterprise organizations. We’ve launched user profiles , so you can tell Anthropic whic",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026-2",
       "published_at": "2026-10-20T00:00:00Z",
-      "source_body_hash": "a39ad5b0943c0f1bc5319840b6c48c78a473441b740c1c6bb44c4f5e7055e366",
+      "source_body_hash": "542f2fd5fd9b128194a5339ed38513f199b6bf066eb0c86afd5a78044c5a2d9a",
       "keywords": [
         "claude"
       ],
-      "excerpt": "Inference hooks are out of beta for Claude Enterprise organizations. We've launched user profiles , so you can tell Anthropic which of your end…",
+      "excerpt": "Inference hooks are out of beta for Claude Enterprise organizations. We’ve launched user profiles , so you can tell Anthropic which of your end…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "9f8ec6743ce521d88164b9f65fc2e6b626636b8edaea33636dd47df6d4fb98ba",
+      "content_hash": "be1e0ad02ed90da7e57795495ec96da10e5f174b07b05368b461c84f58168f27",
       "first_seen_at": "2026-10-21T04:57:29Z",
-      "updated_at": "2026-10-27T05:13:18Z",
-      "revision_count": 3
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 4
     },
     {
       "id": "transformers:417566864",
@@ -1843,21 +1984,21 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've added capabilities.thinking.types.between_tools to the Models API . GET /v1/models and GET /v1/models/{model_id} now report",
+      "title": "We’ve added capabilities.thinking.types.between_tools to the Models API . GET /v1/models and GET /v1/models/{model_id} now report",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-15-2026-5",
       "published_at": "2026-10-15T00:00:00Z",
-      "source_body_hash": "601617f63f65c7b5cd4694b8bf0de334aee222f8169dba5fdfaad6ec29db5c67",
+      "source_body_hash": "27d117df700b74a9b7416add8697dcd48129c0a86ea20f5eeebb6475da9e97d2",
       "keywords": [
         "claude",
         "claude.ai"
       ],
-      "excerpt": "We've added capabilities.thinking.types.between_tools to the Models API . GET /v1/models and GET /v1/models/{model_id} now report whether each model accepts thinking: {type: \"betwe…",
+      "excerpt": "We’ve added capabilities.thinking.types.between_tools to the Models API . GET /v1/models and GET /v1/models/{model_id} now report whether each model accepts thinking: {type: \"betwe…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "6e2e4c9b6492fa68f9884398f14eef350f43de491d03aa4dd2fccd3ca9dd16a2",
+      "content_hash": "2f643ea8a4579e1c887937d67d1e0fa4202709556db35f0843491478a2fb00aa",
       "first_seen_at": "2026-10-16T04:39:10Z",
-      "updated_at": "2026-10-20T04:58:15Z",
-      "revision_count": 1
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 2
     },
     {
       "id": "deepagents:413272494",
@@ -2060,20 +2201,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've launched OpenTelemetry export in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your obs",
+      "title": "We’ve launched OpenTelemetry export in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your obs",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-14-2026",
       "published_at": "2026-10-14T00:00:00Z",
-      "source_body_hash": "e5b49b255d80e0af2f905b6e6c50582caa0db3fe4b6a21e6eb8c826046a2f04f",
+      "source_body_hash": "7383c544630d29399c845f2d99a25ab20b7e8b411dc634b5b3c23eafdfd48257",
       "keywords": [
         "claude"
       ],
-      "excerpt": "We've launched OpenTelemetry export in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your observability platform. The Claude…",
+      "excerpt": "We’ve launched OpenTelemetry export in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your observability platform. The Claude…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "1c85fa215095895ba6fba20fc2c26534b8384e76ffcde0b3fa6cf822223ee074",
+      "content_hash": "d57c5ddcce765e55db9d8f487cfc175b394e15b9a0c159e5a527f94883cf5529",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-22T04:58:14Z",
-      "revision_count": 1
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 2
     },
     {
       "id": "pydantic-ai:412197101",
@@ -2514,17 +2655,17 @@
       "title": "You can now let a Claude Managed Agents agent use dynamic workflows , in beta with the managed-agents-2026-04-01 beta header. For",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-9-2026",
       "published_at": "2026-10-09T00:00:00Z",
-      "source_body_hash": "11f9778283b1ca28f5b0cb9c436ef2056e58bb836ece5c94913df81a2c0b4407",
+      "source_body_hash": "8c117befbe69da2a9bea3cb6d5449a00b793131d1f2f7340e9fc6bed43d5304c",
       "keywords": [
         "claude"
       ],
       "excerpt": "You can now let a Claude Managed Agents agent use dynamic workflows , in beta with the managed-agents-2026-04-01 beta header. For work with many…",
       "version": null,
       "release_type": "update",
-      "content_hash": "505fc58b2a5b768ebdb5e8b7723feb457569737af76c800f0d5608b4d0f693c3",
+      "content_hash": "e967f5c799f578711f73fa89b24be9d3617f44c5aff447d97346a546bc811d08",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "crewai:407288927",
@@ -2932,21 +3073,21 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've lowered the price of prompt cache reads on Claude Sonnet 5.5 from $0.20 USD to $0.10 USD per million tokens: 0.05x the base",
+      "title": "We’ve lowered the price of prompt cache reads on Claude Sonnet 5.5 from $0.20 USD to $0.10 USD per million tokens: 0.05x the base",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-7-2026",
       "published_at": "2026-10-07T00:00:00Z",
-      "source_body_hash": "5390c385a6cff3c2e69bcf516acffc38e4ca39cfcc6b7883626b71bb8435ae6d",
+      "source_body_hash": "556a7bbb748eda17938018155daa36466f1adc04739279bd162233ec80eb3c0c",
       "keywords": [
         "claude",
         "claude-haiku-5-5"
       ],
-      "excerpt": "We've lowered the price of prompt cache reads on Claude Sonnet 5.5 from $0.20 USD to $0.10 USD per million tokens: 0.05x the base…",
+      "excerpt": "We’ve lowered the price of prompt cache reads on Claude Sonnet 5.5 from $0.20 USD to $0.10 USD per million tokens: 0.05x the base…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "b99b31af7fcb29e6aff8258dab40f1cce58908d305ec9da7e44543b3bc961686",
+      "content_hash": "6a69b2ee4d72d9649494b7fd60875d6985da7f6eb594905c6663416d08ca0468",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-20T04:58:15Z",
-      "revision_count": 1
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 2
     },
     {
       "id": "claude-agent:405227439",
@@ -3195,18 +3336,18 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've added capabilities.server_tools to the Models API . GET /v1/models and GET /v1/models/{model_id} now report whether each mod",
+      "title": "We’ve added capabilities.server_tools to the Models API . GET /v1/models and GET /v1/models/{model_id} now report whether each mod",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-6-2026",
       "published_at": "2026-10-06T00:00:00Z",
-      "source_body_hash": "afa8eb5168ef3f89f708761acd74c788a67e8409598ca8c64655d60d1667f304",
+      "source_body_hash": "4528d4456f00064c6adfaa87817a24bb18d1a783c4502b0cdd0cba011e5972a2",
       "keywords": [],
-      "excerpt": "We've added capabilities.server_tools to the Models API . GET /v1/models and GET /v1/models/{model_id} now report whether each model accepts the web search and code…",
+      "excerpt": "We’ve added capabilities.server_tools to the Models API . GET /v1/models and GET /v1/models/{model_id} now report whether each model accepts the web search and code…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "c4ad27dfbcc8c8817510072530ba80506f7f4c2937ccabd44e6503ff9e4ab3b4",
+      "content_hash": "cf55fcdeb3e53e4630ff29e6aaaa61bab22c9925544ec5ad6317fde129f600e9",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "langgraph:403980172",
@@ -3342,18 +3483,18 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've added capabilities.thinking.types.disabled to the Models API . GET /v1/models and GET /v1/models/{model_id} now report wheth",
+      "title": "We’ve added capabilities.thinking.types.disabled to the Models API . GET /v1/models and GET /v1/models/{model_id} now report wheth",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-5-2026",
       "published_at": "2026-10-05T00:00:00Z",
-      "source_body_hash": "8c062822f15b77970c9e073841c97e8ee753f7f14bd492361e165658b6eb2960",
+      "source_body_hash": "46694dd8c63119eaa925fe4c275f992b7d4606b6fb2bee71a897792411eb9419",
       "keywords": [],
-      "excerpt": "We've added capabilities.thinking.types.disabled to the Models API . GET /v1/models and GET /v1/models/{model_id} now report whether each model accepts thinking: {type: \"disabled\"}…",
+      "excerpt": "We’ve added capabilities.thinking.types.disabled to the Models API . GET /v1/models and GET /v1/models/{model_id} now report whether each model accepts thinking: {type: \"disabled\"}…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "fbe3f7645edd79794bc8c52a2c8701a06cbcb6cfaa064a134dd4e335dcdb9109",
+      "content_hash": "0922569d4419a8e3a55d0a52c3bcab1316eafe45bd48ce6924f768b6fc724ffb",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "pydantic-ai:402301411",
@@ -3578,20 +3719,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've added a line field to the Models API . GET /v1/models and GET /v1/models/{model_id} now return the model line each model bel",
+      "title": "We’ve added a line field to the Models API . GET /v1/models and GET /v1/models/{model_id} now return the model line each model bel",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#october-1-2026",
       "published_at": "2026-10-01T00:00:00Z",
-      "source_body_hash": "911ea9bad382bdbba9e6eee2529f619e55bdafaf7241510ebb84b5288bc92f81",
+      "source_body_hash": "e456ee5e2f289fe6f4650c3e2933b05eba866ed49e548a1488274adf1c6bbc5e",
       "keywords": [
         "claude"
       ],
-      "excerpt": "We've added a line field to the Models API . GET /v1/models and GET /v1/models/{model_id} now return the model line each model belongs to.…",
+      "excerpt": "We’ve added a line field to the Models API . GET /v1/models and GET /v1/models/{model_id} now return the model line each model belongs to.…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "c132b12d58361bb3b8a42874a0a5b335a6d2522b19487e6f294f8495c67ffa06",
+      "content_hash": "213c1436e23c609eb42a47613a8f0e7243fe4f4d94f85192bccd7c4e20b49602",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "claude-agent:400384835",
@@ -3988,21 +4129,21 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've launched Claude Sonnet 5.5 ( claude-sonnet-5-5 ). It's available on the Claude API, Claude in Amazon Bedrock , Claude Platfo",
+      "title": "We’ve launched Claude Sonnet 5.5 ( claude-sonnet-5-5 ). It’s available on the Claude API, Claude in Amazon Bedrock , Claude Platfo",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-28-2026",
       "published_at": "2026-09-28T00:00:00Z",
-      "source_body_hash": "e597bfbbea1d16086ba6b1de6c1c6d035672ddee06daaa8a3974d1bd00a74fb6",
+      "source_body_hash": "73df41340228263be71b7adf249aefe1df6a87dd9ffd21f02c3f6c118392bc6e",
       "keywords": [
         "claude",
         "claude-sonnet-5-5"
       ],
-      "excerpt": "We've launched Claude Sonnet 5.5 ( claude-sonnet-5-5 ). It's available on the Claude API, Claude in Amazon Bedrock , Claude Platform on AWS ,…",
+      "excerpt": "We’ve launched Claude Sonnet 5.5 ( claude-sonnet-5-5 ). It’s available on the Claude API, Claude in Amazon Bedrock , Claude Platform on AWS ,…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "a1c9ece26813789ab52c4b41a33cbe10a489d2f0f7f3cbac50cfa46564c95251",
+      "content_hash": "cc2a384335a8daded2b5dc1ef5ffa24bc5b6aee83a4ae21abbefdf85e93f248b",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-24T04:44:46Z",
-      "revision_count": 1
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 2
     },
     {
       "id": "pydantic-ai:396978405",
@@ -4368,20 +4509,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We're resuming billing for refusals that arrive before any output when stop_details.category is \"bio\" , \"frontier_llm\" , or \"reaso",
+      "title": "We’re resuming billing for refusals that arrive before any output when stop_details.category is \"bio\" , \"frontier_llm\" , or \"reaso",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-24-2026",
       "published_at": "2026-09-24T00:00:00Z",
-      "source_body_hash": "b41764ced2a3b10f21e8be756309027c074c0230675850e3751c588d94eb9745",
+      "source_body_hash": "d46d0b84c898531a807cd6b39adda4cd5c03837f09ab05a1268343b20f556354",
       "keywords": [
         "claude"
       ],
-      "excerpt": "We're resuming billing for refusals that arrive before any output when stop_details.category is \"bio\" , \"frontier_llm\" , or \"reasoning_extraction\" , the categories where we…",
+      "excerpt": "We’re resuming billing for refusals that arrive before any output when stop_details.category is \"bio\" , \"frontier_llm\" , or \"reasoning_extraction\" , the categories where we…",
       "version": null,
       "release_type": "update",
-      "content_hash": "853a0e96e405a91cb5becccdce4f4ee2b7e88a696f09d8980715be33ad2c3abb",
+      "content_hash": "92f0b044be6ad64f1c0a5d35bff19d45c0e3ed67f1e77d10dffacf894406ba5d",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "langgraph:395139002",
@@ -4811,21 +4952,21 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've launched Claude Opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. It has a 1M token",
+      "title": "We’ve launched Claude Opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. It has a 1M token",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-22-2026",
       "published_at": "2026-09-22T00:00:00Z",
-      "source_body_hash": "5b4451a304bfbb8f7187ec323bef42c760915796d4eb8575b9ac600f37c8d8c3",
+      "source_body_hash": "75fc238ea0beed34e1f61800d14f920fc09e7b38d7f4264f0926f3965a5a0311",
       "keywords": [
         "claude",
         "claude-opus-5-5"
       ],
-      "excerpt": "We've launched Claude Opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. It has a 1M token context window…",
+      "excerpt": "We’ve launched Claude Opus 5.5 ( claude-opus-5-5 ), a model for long-running agentic coding and knowledge work. It has a 1M token context window…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "505d1896193559d153cebab49589592023eb7152d9d641ec01d5665a44efd1b0",
+      "content_hash": "9512335d85fdbd3dc99bae820e71d77bc8ed7872aeabc610de9afa9312a91f35",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-24T04:44:46Z",
-      "revision_count": 1
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 2
     },
     {
       "id": "langfuse:393173891",
@@ -5260,7 +5401,7 @@
       "title": "For cache diagnostics , a response to a request that sends the cache-diagnosis-2026-04-07 beta header now always includes the diag",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-18-2026",
       "published_at": "2026-09-18T00:00:00Z",
-      "source_body_hash": "f30bcfdae097569b4c11fd3253dd961588b376a9fe1324a2301df84e400de758",
+      "source_body_hash": "979992698b53f40f755eb5ea816925f92321a6eb952ea664a21553f0b0269e33",
       "keywords": [
         "claude",
         "claude_in_chrome"
@@ -5268,10 +5409,10 @@
       "excerpt": "For cache diagnostics , a response to a request that sends the cache-diagnosis-2026-04-07 beta header now always includes the diagnostics field. The field is…",
       "version": null,
       "release_type": "update",
-      "content_hash": "e481689518fe81aae55c2ebfb375b102938406b37ced84418f2da94432133157",
+      "content_hash": "6befd964d893708c226d66b5b07c7869d09f5a2f502aa60cc8f80494febeec20",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "claude-agent:391105989",
@@ -5707,17 +5848,17 @@
       "title": "The Messages API can now compact a conversation on demand on the Claude API, in beta with the compact-2026-09-04 beta header. Send",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-14-2026",
       "published_at": "2026-09-14T00:00:00Z",
-      "source_body_hash": "9e82e197629ee55775567aa573de709ad1480ae3a91160a0bf2b7cf810407528",
+      "source_body_hash": "9f837bf9b7304eadce89681d9b916d8a64257faeb418a223e523a026089ea864",
       "keywords": [
         "claude"
       ],
       "excerpt": "The Messages API can now compact a conversation on demand on the Claude API, in beta with the compact-2026-09-04 beta header. Send the top-level…",
       "version": null,
       "release_type": "update",
-      "content_hash": "bdae494d9aa6651c187c0e5e1b643348b0823cf0ddd77b202d2aef950789a0b1",
+      "content_hash": "90c510ad4691804134ab67844456e627bc177aacb83e242e5f55f2752707314b",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "pydantic-ai:387408267",
@@ -5929,17 +6070,17 @@
       "title": "Claude Managed Agents permission policies now include auto : the server evaluates each agent or MCP tool call and runs it, denies",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-10-2026",
       "published_at": "2026-09-10T00:00:00Z",
-      "source_body_hash": "f92c1626bdb031a7c465b200f41c982af85e94a669a7bf19862162a9b733f7a6",
+      "source_body_hash": "614cf7f0517329083378b5ce7dac443ec4d65682316d8e764073d867075bed18",
       "keywords": [
         "claude"
       ],
       "excerpt": "Claude Managed Agents permission policies now include auto : the server evaluates each agent or MCP tool call and runs it, denies it, or…",
       "version": null,
       "release_type": "update",
-      "content_hash": "cf7030433df9cc4896a253ff51bee3697e6da0199a86a572606191e605a8d101",
+      "content_hash": "0412f1e791afd71788454400b4bfc4716889d37440bd49279283572322b0c020",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "crewai:385895818",
@@ -6111,18 +6252,18 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "For cache diagnostics , the API now stores a request's fingerprint only when the request includes the diagnostics object. A reques",
+      "title": "For cache diagnostics , the API now stores a request’s fingerprint only when the request includes the diagnostics object. A reques",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-9-2026",
       "published_at": "2026-09-09T00:00:00Z",
-      "source_body_hash": "3ed8986be283c434dab59497953bddb0b8031598eee6c2b5094e51579e2285b6",
+      "source_body_hash": "4882da812ce1476e0b9bb42cd6c0aee7acbc40485ef327a254efddd9327a5a8f",
       "keywords": [],
-      "excerpt": "For cache diagnostics , the API now stores a request's fingerprint only when the request includes the diagnostics object. A request that sends only…",
+      "excerpt": "For cache diagnostics , the API now stores a request’s fingerprint only when the request includes the diagnostics object. A request that sends only…",
       "version": null,
       "release_type": "update",
-      "content_hash": "42674a7f20b941c0e608eb1c80a2594325b0b258fbaf4bc5dbdfe19a0cf345a2",
+      "content_hash": "ed3cd6f7c5219ed38a6151466b9d1dcdb6a2033f18051a1315f560b4bca0dcf5",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "langfuse:384728311",
@@ -6870,22 +7011,22 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge w",
+      "title": "We’ve launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge w",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
       "published_at": "2026-09-01T00:00:00Z",
-      "source_body_hash": "24eaf36743eac920d03685fe842fff41e597ff0e5c08380626d4a218e30e83d2",
+      "source_body_hash": "5fbd341f5fb75a7b124d1f5f437c54cf7bdd6975d2ced104146ea5b2291b6a30",
       "keywords": [
         "claude",
         "claude-fable-5-1",
         "claude-mythos-5-1"
       ],
-      "excerpt": "We've launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude…",
+      "excerpt": "We’ve launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "d784d510d895fbda03c61d2ce927157972c7e86f1f7925c3e2842f3e776d1052",
+      "content_hash": "f76b71b5782a114bc90eab9aec4045a53c67379c89cbf7311de033231290bbd0",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-24T04:44:46Z",
-      "revision_count": 1
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 2
     },
     {
       "id": "claude-agent:380018468",
@@ -7806,7 +7947,7 @@
       "title": "The Compliance API session endpoints are out of beta for Cowork and Claude Code sessions. See Retrieve session transcripts . The C",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-26-2026",
       "published_at": "2026-08-26T00:00:00Z",
-      "source_body_hash": "18377f01d81fefb69eb782ac1df42f6ce6cab3583321ace4b1bc86fe324471a5",
+      "source_body_hash": "0510479c25894edb3c11964958eeec52ca2b2e7109be1651ed26f7a7d793c196",
       "keywords": [
         "claude",
         "claude_science"
@@ -7814,10 +7955,10 @@
       "excerpt": "The Compliance API session endpoints are out of beta for Cowork and Claude Code sessions. See Retrieve session transcripts . The Compliance API local…",
       "version": null,
       "release_type": "update",
-      "content_hash": "1f1f2b706f8f6ff35d3f917be6a55381df4349689abcd038b5d9990f5e01e039",
+      "content_hash": "0b0735c34d6dbd5836dcac9d700a78270980352e7dbf66d8b22d99e4b6cc6845",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "claude-agent:376762459",
@@ -8328,20 +8469,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We've released v1.0 of the Python SDK . The SDK's HTTP layer moves from httpx to httpx2 , a maintained, API-compatible fork: build",
+      "title": "We’ve released v1.0 of the Python SDK . The SDK’s HTTP layer moves from httpx to httpx2 , a maintained, API-compatible fork: build",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-20-2026",
       "published_at": "2026-08-20T00:00:00Z",
-      "source_body_hash": "6723ef8b8b8bc1456abe7ee778da0e0ea641a52eebacaeeca4d45a6e45b51150",
+      "source_body_hash": "da478e600b97773c7a2794bbce0b55fda3fe30f84457d8a0380925e7ca18b1e1",
       "keywords": [
         "claude"
       ],
-      "excerpt": "We've released v1.0 of the Python SDK . The SDK's HTTP layer moves from httpx to httpx2 , a maintained, API-compatible fork: build custom…",
+      "excerpt": "We’ve released v1.0 of the Python SDK . The SDK’s HTTP layer moves from httpx to httpx2 , a maintained, API-compatible fork: build custom…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "ed700f584f79e9e8aca835e47fffbdc266b0ab0e438ee71a3dc7051a1b34c007",
+      "content_hash": "4e26f3f215db0a1444f3bec4189412a870c6dd04baf67fb3b9645a029b2eb2ee",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "deepagents:373382873",
@@ -8589,7 +8730,7 @@
       "title": "The computer use tool is out of beta on the Claude API as the computer_toolset_20260801 toolset: no beta header, batch actions (se",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-19-2026",
       "published_at": "2026-08-19T00:00:00Z",
-      "source_body_hash": "fb43da3244e36b15e85e2ff07110bcbddb5d9cd9797cfd339f1955ba1e9d4512",
+      "source_body_hash": "12f89edb158ea1450d34399b7e8a71efa46b9d40298caafbe34b3d20c138314f",
       "keywords": [
         "claude",
         "claude.ai"
@@ -8597,10 +8738,10 @@
       "excerpt": "The computer use tool is out of beta on the Claude API as the computer_toolset_20260801 toolset: no beta header, batch actions (several actions in…",
       "version": null,
       "release_type": "update",
-      "content_hash": "9086bfe4653b546b8c6654131bd5f4e4786ca645d4c46854462eeeaf6a9ad456",
+      "content_hash": "1965f5716d1be107e0860a5c39e1a653fe840a22ec4ff637fa46276be8427e9e",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "claude-agent:372639694",
@@ -9592,20 +9733,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "The Compliance API now returns transcripts of Cowork and Claude Code sessions that run on your users' machines, in beta for Claude",
+      "title": "The Compliance API now returns transcripts of Cowork and Claude Code sessions that run on your users’ machines, in beta for Claude",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-11-2026",
       "published_at": "2026-08-11T00:00:00Z",
-      "source_body_hash": "cf713d2a234967b4e6f30fd7d737b1f3a7db866df8116b31a0c1087825e9ee63",
+      "source_body_hash": "72c79e84f130055e92ed88b39ee94803ade220d93368896d941daebd4519858c",
       "keywords": [
         "claude"
       ],
-      "excerpt": "The Compliance API now returns transcripts of Cowork and Claude Code sessions that run on your users' machines, in beta for Claude Enterprise organizations.…",
+      "excerpt": "The Compliance API now returns transcripts of Cowork and Claude Code sessions that run on your users’ machines, in beta for Claude Enterprise organizations.…",
       "version": null,
       "release_type": "update",
-      "content_hash": "6b04f2b95df2da5d23bd207707a07da075291e75c62c73034846ec286c59af74",
+      "content_hash": "5fd5a7021c1208bb6b5f2e159e02043c480643949a5a945dfd4beb5fcbe16575",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "ollama:368253532",
@@ -10028,20 +10169,20 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "You can now set a budget on a Claude Managed Agents session: a hard cap on the session's spend, priced at public list rates. A ses",
+      "title": "You can now set a budget on a Claude Managed Agents session: a hard cap on the session’s spend, priced at public list rates. A ses",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-7-2026",
       "published_at": "2026-08-07T00:00:00Z",
-      "source_body_hash": "878209bf230ebb6f89f6a9e9955b017cb23c111f94bd87d7b85f90e1459807e8",
+      "source_body_hash": "9f91ad79a0a655306703d38ff20f48ba77000ecf067e2a69965700539200377e",
       "keywords": [
         "claude"
       ],
-      "excerpt": "You can now set a budget on a Claude Managed Agents session: a hard cap on the session's spend, priced at public list rates.…",
+      "excerpt": "You can now set a budget on a Claude Managed Agents session: a hard cap on the session’s spend, priced at public list rates.…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "83aa71919689ce68dd18a568f397f3dfb6f20c7d159b186e4ca2d23093b341e8",
+      "content_hash": "d3481fe6bbcd12541e3da6978051e49befef1c81ac96c8ad3603372346a8f12b",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "deepagents:366268084",
@@ -10319,22 +10460,22 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "Inference hooks are now in beta for Claude Enterprise organizations. Point Claude at your organization's AI security server, and e",
+      "title": "Inference hooks are now in beta for Claude Enterprise organizations. Point Claude at your organization’s AI security server, and e",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-5-2026",
       "published_at": "2026-08-05T00:00:00Z",
-      "source_body_hash": "b12f5328b382f67a89af28c3a6a73c42961acd1110ab94154d4bb3ed44fb7dea",
+      "source_body_hash": "35c378332d4ca83e9418258581e6fe58edc92e5c8c8c60522d2cabac654b65b9",
       "keywords": [
         "claude",
         "claude-opus-4-1-20250805",
         "claude.ai"
       ],
-      "excerpt": "Inference hooks are now in beta for Claude Enterprise organizations. Point Claude at your organization's AI security server, and each governed prompt across claude.ai,…",
+      "excerpt": "Inference hooks are now in beta for Claude Enterprise organizations. Point Claude at your organization’s AI security server, and each governed prompt across claude.ai,…",
       "version": null,
       "release_type": "update",
-      "content_hash": "8501b63663176d9509e0340b313b2008cf23c34957a8bcf8a8450b200f15f3cf",
+      "content_hash": "a15ebe38d700ff2c7560aa7aaac6c72de2efa5a8394448c92e45c5a5d4307055",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "microsoft:365207390",
@@ -10675,7 +10816,7 @@
       "title": "The Compliance API now returns transcripts of Cowork sessions started on claude.ai web or mobile, in beta for Claude Enterprise or",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#august-3-2026",
       "published_at": "2026-08-03T00:00:00Z",
-      "source_body_hash": "77e0717b679fa4847db90fb7966262cbbc7b4d299fa7eb5ad2652e13f330c754",
+      "source_body_hash": "c2940b4002b0e9683ccf491dce1fa9064e42e634fcd16985f024848d99689520",
       "keywords": [
         "claude",
         "claude.ai"
@@ -10683,10 +10824,10 @@
       "excerpt": "The Compliance API now returns transcripts of Cowork sessions started on claude.ai web or mobile, in beta for Claude Enterprise organizations. GET /v1/compliance/apps/sessions/remo…",
       "version": null,
       "release_type": "update",
-      "content_hash": "4ce9d0b256a7cf759ef28545ea80e0327e9460a695ffd0ed8f5ac85807287ee8",
+      "content_hash": "9840994cf4d21c2b2b76b8485d31a978ba54b4c5b44c67490550bd3438795d89",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-10-28T05:51:31Z",
+      "revision_count": 1
     },
     {
       "id": "pydantic-ai:363405627",
@@ -12658,160 +12799,160 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
-      "items_in_window": 30,
+      "items_in_window": 29,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 34,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 15,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 11,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "openai-agents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
-      "items_in_window": 14,
+      "items_in_window": 13,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 45,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 36,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
-      "items_in_window": 99,
+      "items_in_window": 94,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 18,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 22,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 56,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
-      "items_in_window": 22,
+      "items_in_window": 23,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 1,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 4,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 95,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 13,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 34,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-10-27T05:13:18Z",
-      "last_success_at": "2026-10-27T05:13:18Z",
+      "last_attempt_at": "2026-10-28T05:51:31Z",
+      "last_success_at": "2026-10-28T05:51:31Z",
       "error": null,
       "items_in_window": 7,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
@@ -13566,6 +13707,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-10-27T05:13:18Z",
-  "last_success_at": "2026-10-27T05:13:18Z"
+  "last_attempt_at": "2026-10-28T05:51:31Z",
+  "last_success_at": "2026-10-28T05:51:31Z"
 }
