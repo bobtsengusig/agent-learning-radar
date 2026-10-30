@@ -2,6 +2,124 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "claude-agent:428572476",
+      "source_id": "claude-agent",
+      "product": "Claude Agent SDK",
+      "category": "framework",
+      "title": "v0.2.175",
+      "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.175",
+      "published_at": "2026-10-30T01:50:51Z",
+      "source_body_hash": "a23e12e71190c2e1f57e9afa791c1dd415cdda36bef95698e640383cb5660fa1",
+      "keywords": [
+        "claude",
+        "claude-agent-sdk"
+      ],
+      "excerpt": "### Internal/Other Changes - Updated bundled Claude CLI to version 2.1.314 - CI: raised PyPI project size limit guard from 50 GiB to 150…",
+      "version": "v0.2.175",
+      "release_type": "release",
+      "content_hash": "338212bdf66accd5767431b0235c741e96204dde8e608552b5f73a24536e8da4",
+      "first_seen_at": "2026-10-30T05:56:33Z",
+      "updated_at": "2026-10-30T05:56:33Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langfuse:428102367",
+      "source_id": "langfuse",
+      "product": "Langfuse",
+      "category": "evaluation",
+      "title": "v4.72.0",
+      "url": "https://github.com/langfuse/langfuse/releases/tag/v4.72.0",
+      "published_at": "2026-10-29T16:14:48Z",
+      "source_body_hash": "578281699888585dfe058f4bb616774c33eec8a07a30ecef330cd679d8fdf724",
+      "keywords": [],
+      "excerpt": "## What's Changed ### Features * feat(ingestion): attribute AI gateway spans to their gateway API key and service by @wochinge in https://github.com/langfuse/langfuse/pull/19398 * …",
+      "version": "v4.72.0",
+      "release_type": "release",
+      "content_hash": "8cb5bba257352eba151d7d19a431a63e3a330b43ec7f3300cc99ed8cca2ef9fc",
+      "first_seen_at": "2026-10-30T05:56:33Z",
+      "updated_at": "2026-10-30T05:56:33Z",
+      "revision_count": 0
+    },
+    {
+      "id": "transformers:427874006",
+      "source_id": "transformers",
+      "product": "Transformers",
+      "category": "model",
+      "title": "v5.22.0: Mistral Large 4 (Le Chonk)",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
+      "published_at": "2026-10-29T14:15:39Z",
+      "source_body_hash": "307f0a615464421951199a83d7827dbf7b320167a70d550a5be02ab8d7c0508e",
+      "keywords": [
+        "chat",
+        "mistral"
+      ],
+      "excerpt": "## New Models ### Mistral Large 4 (Le Chonk) Mistral Large 4 is Mistral's largest and most capable model to date: a 1 trillion-parameter…",
+      "version": "v5.22.0",
+      "release_type": "release",
+      "content_hash": "7002813ff5c65676c1f755a4acd6bf47648b75e738abb42f06732074438ff577",
+      "first_seen_at": "2026-10-30T05:56:33Z",
+      "updated_at": "2026-10-30T05:56:33Z",
+      "revision_count": 0
+    },
+    {
+      "id": "transformers:427619376",
+      "source_id": "transformers",
+      "product": "Transformers",
+      "category": "model",
+      "title": "Patch release v5.21.1",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.21.1",
+      "published_at": "2026-10-29T08:35:02Z",
+      "source_body_hash": "f00b6a86dd55ef5a9a7eb34739d8e22cc0d3a2964f4a59c86014b951643d0529",
+      "keywords": [],
+      "excerpt": "# Patch release v5.21.1 ** Fix rope_scaling setter for configs that assign it during init (#50080 ) We broke remote code loading in vllm,…",
+      "version": "v5.21.1",
+      "release_type": "release",
+      "content_hash": "d616022550faebffaa071c3e71aee743c9efce91db497bdc6d8a7869e30fb221",
+      "first_seen_at": "2026-10-30T05:56:33Z",
+      "updated_at": "2026-10-30T05:56:33Z",
+      "revision_count": 0
+    },
+    {
+      "id": "crewai:427574850",
+      "source_id": "crewai",
+      "product": "CrewAI",
+      "category": "framework",
+      "title": "1.15.33",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.33",
+      "published_at": "2026-10-29T07:36:24Z",
+      "source_body_hash": "d1e128615264c3451aa6572f96cd2c0aea281c59a598a23549f7911d74ee47c4",
+      "keywords": [
+        "chat"
+      ],
+      "excerpt": "## What's Changed ### Features - Add `crewai skill search` to list the organization's skills - Pass `crewai run --inputs` to a Python flow…",
+      "version": "1.15.33",
+      "release_type": "release",
+      "content_hash": "0075b3110eeef2c70c948863732585ac345f1c12365630406192871d2ad1fa22",
+      "first_seen_at": "2026-10-30T05:56:33Z",
+      "updated_at": "2026-10-30T05:56:33Z",
+      "revision_count": 0
+    },
+    {
+      "id": "claude:2026-10-29",
+      "source_id": "claude",
+      "product": "Claude Platform",
+      "category": "model",
+      "title": "We’ve launched the Usage and Cost Analytics API in beta with the analytics-usage-cost-2026-08-24 beta header. Its /v1/organization",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-29-2026",
+      "published_at": "2026-10-29T00:00:00Z",
+      "source_body_hash": "bd0ebc455ebe32ac709f952707b5b0ebe0c35c062d197bc527286bab1d6acf68",
+      "keywords": [
+        "claude"
+      ],
+      "excerpt": "We’ve launched the Usage and Cost Analytics API in beta with the analytics-usage-cost-2026-08-24 beta header. Its /v1/organizations/analytics/usage and /v1/organizations/analytics/…",
+      "version": null,
+      "release_type": "feature",
+      "content_hash": "76b066bfdecd36443821ce7bd89eb4a80daeb06a1b5b8ba8ff5cdb3b588d0b35",
+      "first_seen_at": "2026-10-30T05:56:33Z",
+      "updated_at": "2026-10-30T05:56:33Z",
+      "revision_count": 0
+    },
+    {
       "id": "ollama:427123529",
       "source_id": "ollama",
       "product": "Ollama",
@@ -63,6 +181,26 @@
       "content_hash": "97ee33ad6046bfbba496137edecab2d10d515c100cccb74d6d8d3250378a1127",
       "first_seen_at": "2026-10-29T05:55:28Z",
       "updated_at": "2026-10-29T05:55:28Z",
+      "revision_count": 0
+    },
+    {
+      "id": "claude:2026-10-28",
+      "source_id": "claude",
+      "product": "Claude Platform",
+      "category": "model",
+      "title": "We’ve raised the maximum request size for the Messages API and the Token Counting API from 32 MB to 128 MB on the first-party Clau",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#october-28-2026",
+      "published_at": "2026-10-28T00:00:00Z",
+      "source_body_hash": "450dd4b1300f08bc15830e66cb9f6df3e9c4d731898f454c32c9a4335c661a9f",
+      "keywords": [
+        "claude"
+      ],
+      "excerpt": "We’ve raised the maximum request size for the Messages API and the Token Counting API from 32 MB to 128 MB on the first-party…",
+      "version": null,
+      "release_type": "update",
+      "content_hash": "1fae084b19a48519ff0b315d799e3685c45ef08227bdbcb9ce6359ec81eea9f4",
+      "first_seen_at": "2026-10-30T05:56:33Z",
+      "updated_at": "2026-10-30T05:56:33Z",
       "revision_count": 0
     },
     {
@@ -12837,160 +12975,160 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 30,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
-      "items_in_window": 34,
+      "items_in_window": 35,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 15,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
-      "error": null,
-      "items_in_window": 11,
-      "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
-    },
-    "openai-agents": {
-      "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 13,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
+    "openai-agents": {
+      "status": "ok",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
+      "error": null,
+      "items_in_window": 12,
+      "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
+    },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
-      "items_in_window": 45,
+      "items_in_window": 46,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 34,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 91,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
-      "items_in_window": 16,
+      "items_in_window": 15,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 20,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
-      "items_in_window": 56,
+      "items_in_window": 55,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 23,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 1,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 4,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 93,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 12,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 35,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-10-29T05:55:28Z",
-      "last_success_at": "2026-10-29T05:55:28Z",
+      "last_attempt_at": "2026-10-30T05:56:33Z",
+      "last_success_at": "2026-10-30T05:56:33Z",
       "error": null,
       "items_in_window": 7,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
@@ -13745,6 +13883,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-10-29T05:55:28Z",
-  "last_success_at": "2026-10-29T05:55:28Z"
+  "last_attempt_at": "2026-10-30T05:56:33Z",
+  "last_success_at": "2026-10-30T05:56:33Z"
 }
