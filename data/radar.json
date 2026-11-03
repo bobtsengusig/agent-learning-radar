@@ -2,6 +2,167 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "claude-agent:432204919",
+      "source_id": "claude-agent",
+      "product": "Claude Agent SDK",
+      "category": "framework",
+      "title": "v0.2.177",
+      "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.177",
+      "published_at": "2026-11-03T02:17:57Z",
+      "source_body_hash": "7396bd8cf34c6b917f803b38d62717e0eb426097f7301a6636879d2c24c7831c",
+      "keywords": [
+        "claude",
+        "claude-agent-sdk"
+      ],
+      "excerpt": "### New Features - **`on_failure` option for `HookMatcher`**: Control what happens when a hook callback fails. Set `on_failure=\"block\"` to block the action when a…",
+      "version": "v0.2.177",
+      "release_type": "release",
+      "content_hash": "03f6243cd905e949d5c3c24adb5d0aee59f317784a987f01089f80e4fffc6e49",
+      "first_seen_at": "2026-11-03T06:56:04Z",
+      "updated_at": "2026-11-03T06:56:04Z",
+      "revision_count": 0
+    },
+    {
+      "id": "ollama:432169781",
+      "source_id": "ollama",
+      "product": "Ollama",
+      "category": "deployment",
+      "title": "v0.40.14",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+      "published_at": "2026-11-03T01:40:40Z",
+      "source_body_hash": "a492bd3f801114cd6e1d3b52a54dee3f3bf24ebeea3f4dd332e025c9e979e865",
+      "keywords": [
+        "chatgpt",
+        "claude"
+      ],
+      "excerpt": "## What's Changed * ci: pin buildx to workaround deadlock by @dhiltgen in https://github.com/ollama/ollama/pull/19373 * openai: preserve readable Responses input content by @hoyyev…",
+      "version": "v0.40.14",
+      "release_type": "prerelease",
+      "content_hash": "a58e7d783ea5ba195314f2665cdf0d18a0227a00cb338f82703f83ce55d78499",
+      "first_seen_at": "2026-11-03T06:56:04Z",
+      "updated_at": "2026-11-03T06:56:04Z",
+      "revision_count": 0
+    },
+    {
+      "id": "pydantic-ai:432159690",
+      "source_id": "pydantic-ai",
+      "product": "Pydantic AI",
+      "category": "framework",
+      "title": "v2.65.0 (2026-11-02)",
+      "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.65.0",
+      "published_at": "2026-11-03T01:25:27Z",
+      "source_body_hash": "01c6101d8cab32785c4a217f112b961466b766777c1c744de04696b1cf560df9",
+      "keywords": [
+        "claude",
+        "gemini",
+        "gpt-5.6"
+      ],
+      "excerpt": "## What's Changed ### ⚠️ Compatibility Notes * Protect the `gh-aw` canonical session capture from agent tools by @dsfaccini in https://github.com/pydantic/pydantic-ai/pull/10606 * …",
+      "version": "v2.65.0",
+      "release_type": "release",
+      "content_hash": "3b3bad117510bebe2b2b5a8a9b631539974686e154b1ad4c7eae773f1988e9de",
+      "first_seen_at": "2026-11-03T06:56:04Z",
+      "updated_at": "2026-11-03T06:56:04Z",
+      "revision_count": 0
+    },
+    {
+      "id": "deepagents:432069559",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "deepagents-code==0.2.4",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents-code%3D%3D0.2.4",
+      "published_at": "2026-11-02T23:13:54Z",
+      "source_body_hash": "9c086e7c3506e3bd35c45a75e5b915ebb3d853d43e5844245181efb0bfd3d114",
+      "keywords": [],
+      "excerpt": "### Features - Mark interrupt cancellation messages with `lc_source` (#7501). ### Bug Fixes - Clarify workspace conflicts, MCP login failures, and disabled Slack MCP…",
+      "version": "deepagents-code==0.2.4",
+      "release_type": "release",
+      "content_hash": "e8e15c32bfb997f5cdaf9415906f40517a8c36815879932501e26d4fba41a09c",
+      "first_seen_at": "2026-11-03T06:56:04Z",
+      "updated_at": "2026-11-03T06:56:04Z",
+      "revision_count": 0
+    },
+    {
+      "id": "deepagents:431740043",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "deepagents-code==0.2.3",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents-code%3D%3D0.2.3",
+      "published_at": "2026-11-02T17:12:53Z",
+      "source_body_hash": "cddfa4622699eeadb76e777b64a5ab100771c27f26d31ec372d7876e04e8b960",
+      "keywords": [
+        "chatgpt",
+        "claude"
+      ],
+      "excerpt": "### Features - Defer loading MCP tool schemas with provider-native tool search (#7304). - Include the official marketplace by default (#7364). - Require an…",
+      "version": "deepagents-code==0.2.3",
+      "release_type": "release",
+      "content_hash": "836b127c54ac827bff431732bde03db4a29c5b08565da14f2a1332de57e39a8f",
+      "first_seen_at": "2026-11-03T06:56:04Z",
+      "updated_at": "2026-11-03T06:56:04Z",
+      "revision_count": 0
+    },
+    {
+      "id": "vllm:431309343",
+      "source_id": "vllm",
+      "product": "vLLM",
+      "category": "deployment",
+      "title": "v0.33.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+      "published_at": "2026-11-02T10:10:05Z",
+      "source_body_hash": "896e7e035c9a1a86b589d3fda13cd629436839acc05b98ea9f156de78c53daf7",
+      "keywords": [
+        "chat",
+        "chat-template",
+        "deepseek",
+        "deepseek-r1",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4.1-flash",
+        "deepseek-vl2",
+        "gemma",
+        "gemma4unified",
+        "gpt-oss",
+        "gpt-oss-120b",
+        "qwen",
+        "qwen3",
+        "qwen3-next",
+        "qwen3.5",
+        "qwen3.8-flash-next",
+        "qwen3.8-flash-next-nvfp4",
+        "qwen4exp"
+      ],
+      "excerpt": "# v0.33.0 ## Highlights This release features 927 commits from 389 contributors (122 new)! * **New models**: Reflection Beam-1.0 (501B MoE, 23B active) with…",
+      "version": "v0.33.0rc3",
+      "release_type": "release",
+      "content_hash": "3ad9e5694d64575858538c47a1174b78379de77ae458ede4f196d8fb0e01d85a",
+      "first_seen_at": "2026-11-03T06:56:04Z",
+      "updated_at": "2026-11-03T06:56:04Z",
+      "revision_count": 0
+    },
+    {
+      "id": "claude:2026-11-02",
+      "source_id": "claude",
+      "product": "Claude Platform",
+      "category": "model",
+      "title": "Long conversations and agent loops on the Messages API can now send smaller requests and get a lower time to first token with mess",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-2-2026",
+      "published_at": "2026-11-02T00:00:00Z",
+      "source_body_hash": "5577766f9d0fa976c7fbed10905e33b029d145050fd1c41a716c52066de4ad96",
+      "keywords": [
+        "claude"
+      ],
+      "excerpt": "Long conversations and agent loops on the Messages API can now send smaller requests and get a lower time to first token with message…",
+      "version": null,
+      "release_type": "feature",
+      "content_hash": "4749deda13caad17b8528bd19fc0f63edb1e0a36b0038c2fe7fc0f35077653b5",
+      "first_seen_at": "2026-11-03T06:56:04Z",
+      "updated_at": "2026-11-03T06:56:04Z",
+      "revision_count": 0
+    },
+    {
       "id": "crewai:430865691",
       "source_id": "crewai",
       "product": "CrewAI",
@@ -180,6 +341,24 @@
       "first_seen_at": "2026-10-31T05:52:59Z",
       "updated_at": "2026-10-31T05:52:59Z",
       "revision_count": 0
+    },
+    {
+      "id": "mcp:https://blog.modelcontextprotocol.io/posts/ruby-sdk-tier-1/",
+      "source_id": "mcp",
+      "product": "MCP",
+      "category": "protocol",
+      "title": "The Official Ruby SDK for MCP Reaches Tier 1",
+      "url": "https://blog.modelcontextprotocol.io/posts/ruby-sdk-tier-1/",
+      "published_at": "2026-10-30T09:00:00Z",
+      "source_body_hash": "d7abf3731ec9a55531d2bbd04fa284db16acf7bc9b1f28d693f96a764af3fe44",
+      "keywords": [],
+      "excerpt": "The official Ruby SDK for the Model Context Protocol is now a Tier 1 SDK under the MCP SDK tiering system, with full support…",
+      "version": null,
+      "release_type": "update",
+      "content_hash": "cddab1dffc586cf4541d7a63a670adee7c64c0d304f41e9fb5564743593903d1",
+      "first_seen_at": "2026-10-31T05:52:59Z",
+      "updated_at": "2026-11-03T06:56:04Z",
+      "revision_count": 1
     },
     {
       "id": "claude-agent:428572476",
@@ -4417,24 +4596,6 @@
       "content_hash": "51fe04a0a99fd0269e287217400cd148d044e1c461c8ea321843a818c4e22b82",
       "first_seen_at": "2026-10-15T04:06:41Z",
       "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
-    },
-    {
-      "id": "mcp:https://blog.modelcontextprotocol.io/posts/ruby-sdk-tier-1/",
-      "source_id": "mcp",
-      "product": "MCP",
-      "category": "protocol",
-      "title": "The Official Ruby SDK for MCP Reaches Tier 1",
-      "url": "https://blog.modelcontextprotocol.io/posts/ruby-sdk-tier-1/",
-      "published_at": "2026-09-29T09:00:00Z",
-      "source_body_hash": "ad2580ed0c800aaa9c238b92d04e359d62c46064d96a370ae0503fbcc57d5748",
-      "keywords": [],
-      "excerpt": "The official Ruby SDK for the Model Context Protocol is now a Tier 1 SDK under the MCP SDK tiering system, with full support…",
-      "version": null,
-      "release_type": "update",
-      "content_hash": "b32c2387bfda9ea7cb0d4ca640ef94b235759619c92b5f4ac21f217fc3cc58e8",
-      "first_seen_at": "2026-10-31T05:52:59Z",
-      "updated_at": "2026-10-31T05:52:59Z",
       "revision_count": 0
     },
     {
@@ -13233,162 +13394,162 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
-      "items_in_window": 30,
+      "items_in_window": 29,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 35,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
-      "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
+      "status": "error",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
       "last_success_at": "2026-11-02T06:19:16Z",
-      "error": null,
+      "error": "ValueError: No dated changelog entries found; parser requires review",
       "items_in_window": 16,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 14,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "openai-agents": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
-      "items_in_window": 12,
+      "items_in_window": 10,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 46,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 37,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 89,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 14,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
-      "items_in_window": 22,
+      "items_in_window": 21,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 55,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
-      "items_in_window": 24,
+      "items_in_window": 23,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 4,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
-      "items_in_window": 90,
+      "items_in_window": 89,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
-      "items_in_window": 12,
+      "items_in_window": 11,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
       "items_in_window": 35,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-11-02T06:19:16Z",
-      "last_success_at": "2026-11-02T06:19:16Z",
+      "last_attempt_at": "2026-11-03T06:56:04Z",
+      "last_success_at": "2026-11-03T06:56:04Z",
       "error": null,
-      "items_in_window": 7,
+      "items_in_window": 8,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     }
   },
@@ -13397,7 +13558,7 @@
       "id": "2026-W44",
       "start": "2026-10-26",
       "end_exclusive": "2026-11-02",
-      "generated_at": "2026-11-02T06:19:16Z",
+      "generated_at": "2026-11-03T06:56:04Z",
       "item_ids": [
         "claude-agent:429652008",
         "pydantic-ai:429582154",
@@ -13407,6 +13568,7 @@
         "microsoft:428956413",
         "microsoft:429383862",
         "transformers:428853453",
+        "mcp:https://blog.modelcontextprotocol.io/posts/ruby-sdk-tier-1/",
         "claude-agent:428572476",
         "openai:2026-10-30",
         "gemini:2026-10-30",
@@ -13627,7 +13789,7 @@
       "id": "2026-W40",
       "start": "2026-09-28",
       "end_exclusive": "2026-10-05",
-      "generated_at": "2026-10-31T05:52:59Z",
+      "generated_at": "2026-11-03T06:56:04Z",
       "item_ids": [
         "pydantic-ai:402301411",
         "openai-agents:401929435",
@@ -13653,7 +13815,6 @@
         "deepagents:399342947",
         "deepagents:399325005",
         "deepagents:399294259",
-        "mcp:https://blog.modelcontextprotocol.io/posts/ruby-sdk-tier-1/",
         "langfuse:398948156",
         "openai:2026-09-29",
         "deepagents:398691527",
@@ -14193,6 +14354,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-11-02T06:19:16Z",
-  "last_success_at": "2026-11-02T06:19:16Z"
+  "last_attempt_at": "2026-11-03T06:56:04Z",
+  "last_success_at": "2026-11-03T06:56:04Z"
 }
