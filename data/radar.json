@@ -2,6 +2,66 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "crewai:438642559",
+      "source_id": "crewai",
+      "product": "CrewAI",
+      "category": "framework",
+      "title": "1.15.39",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.39",
+      "published_at": "2026-11-09T01:07:14Z",
+      "source_body_hash": "63ab578ccb06e36c89e142fa45aa30423c8d9de0d51d428ab0da17d9e56b4f29",
+      "keywords": [],
+      "excerpt": "## What's Changed ### Documentation - Document the `apps_not_connected` error on `/kickoff` and `/status` ## Contributors @joaomdmoura",
+      "version": "1.15.39",
+      "release_type": "release",
+      "content_hash": "a73b6958d035ad67a88cfb33a8efecf2dfc1c384506819702d3fe2fb95b02947",
+      "first_seen_at": "2026-11-09T06:46:30Z",
+      "updated_at": "2026-11-09T06:46:30Z",
+      "revision_count": 0
+    },
+    {
+      "id": "crewai:438475091",
+      "source_id": "crewai",
+      "product": "CrewAI",
+      "category": "framework",
+      "title": "1.15.38",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.38",
+      "published_at": "2026-11-08T19:39:30Z",
+      "source_body_hash": "64dbe40a44c4c20c58c97eb678d59931240877ec7b19a60eda4f48b82ac8737a",
+      "keywords": [
+        "gpt-6-luna"
+      ],
+      "excerpt": "## What's Changed ### Features - Make gpt-6-luna crewAI's default model everywhere - Read spreadsheet URLs in an agent's input with tools over every…",
+      "version": "1.15.38",
+      "release_type": "release",
+      "content_hash": "9609e75b1350ec9b68bed136783380132ab933dd25daa86dd838e8a08414904e",
+      "first_seen_at": "2026-11-09T06:46:30Z",
+      "updated_at": "2026-11-09T06:46:30Z",
+      "revision_count": 0
+    },
+    {
+      "id": "openai-agents:438088643",
+      "source_id": "openai-agents",
+      "product": "OpenAI Agents SDK",
+      "category": "framework",
+      "title": "Agents SDK v0.24.0-alpha.7",
+      "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.24.0-alpha.7",
+      "published_at": "2026-11-08T07:05:11Z",
+      "source_body_hash": "50192d3515bd2e107f93b9cf321de83ae3331d98373ba0776895574b94b02968",
+      "keywords": [
+        "gpt-5.6-sol",
+        "gpt-6-astra",
+        "gpt-6.1-sol"
+      ],
+      "excerpt": "# Agents SDK v0.24.0-alpha.7 ## Highlights - **Use Classic workflows alongside native execution.** Import the retained v0 runtime through `agents.classic`. This alpha also changes…",
+      "version": "v0.24.0-alpha.7",
+      "release_type": "prerelease",
+      "content_hash": "2f6727f055d5a34ac680293fce2e6cc737bf50f1b351364eb6a5c1f0dd3c72e2",
+      "first_seen_at": "2026-11-09T06:46:30Z",
+      "updated_at": "2026-11-09T06:46:30Z",
+      "revision_count": 0
+    },
+    {
       "id": "microsoft:436717484",
       "source_id": "microsoft",
       "product": "Microsoft Agent Framework",
@@ -14096,23 +14156,23 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 32,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
-      "items_in_window": 35,
+      "items_in_window": 34,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
       "status": "error",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
       "last_success_at": "2026-11-02T06:19:16Z",
       "error": "ValueError: No dated changelog entries found; parser requires review",
       "items_in_window": 16,
@@ -14120,142 +14180,194 @@
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
-      "items_in_window": 15,
+      "items_in_window": 14,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "openai-agents": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 11,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
-      "items_in_window": 44,
+      "items_in_window": 43,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 41,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 90,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 13,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 23,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
-      "items_in_window": 53,
+      "items_in_window": 52,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
-      "items_in_window": 23,
+      "items_in_window": 25,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 3,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
-      "items_in_window": 92,
+      "items_in_window": 91,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
       "items_in_window": 11,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
-      "items_in_window": 36,
+      "items_in_window": 34,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-11-08T06:12:52Z",
-      "last_success_at": "2026-11-08T06:12:52Z",
+      "last_attempt_at": "2026-11-09T06:46:30Z",
+      "last_success_at": "2026-11-09T06:46:30Z",
       "error": null,
-      "items_in_window": 8,
+      "items_in_window": 7,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     }
   },
   "digests": [
+    {
+      "id": "2026-W45",
+      "start": "2026-11-02",
+      "end_exclusive": "2026-11-09",
+      "generated_at": "2026-11-09T06:46:30Z",
+      "item_ids": [
+        "openai-agents:438088643",
+        "microsoft:436717484",
+        "deepagents:437347438",
+        "crewai:437262924",
+        "adk:437224180",
+        "microsoft:437103719",
+        "claude-agent:436819940",
+        "transformers:436664122",
+        "crewai:436105734",
+        "langgraph:436052940",
+        "langgraph:436052594",
+        "deepagents:435776532",
+        "deepagents:435752100",
+        "deepagents:435707117",
+        "langfuse:435549202",
+        "langgraph:434710003",
+        "langgraph:434696366",
+        "langgraph:434689870",
+        "openai:2026-11-05",
+        "claude:2026-11-05",
+        "pydantic-ai:433686762",
+        "pydantic-ai:433686641",
+        "langfuse:433736264",
+        "claude-agent:433388468",
+        "openai:2026-11-04",
+        "ollama:433274277",
+        "crewai:433067425",
+        "langgraph:433053624",
+        "openai-agents:432964035",
+        "langfuse:432935453",
+        "langfuse:432757000",
+        "langfuse:432711631",
+        "langfuse:432614912",
+        "claude-agent:432204919",
+        "ollama:432169781",
+        "pydantic-ai:432159690",
+        "claude:2026-11-03",
+        "deepagents:432069559",
+        "deepagents:431740043",
+        "vllm:431309343",
+        "openai:2026-11-02",
+        "claude:2026-11-02",
+        "crewai:430865691"
+      ],
+      "undated_ids": []
+    },
     {
       "id": "2026-W44",
       "start": "2026-10-26",
@@ -15058,6 +15170,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-11-08T06:12:52Z",
-  "last_success_at": "2026-11-08T06:12:52Z"
+  "last_attempt_at": "2026-11-09T06:46:30Z",
+  "last_success_at": "2026-11-09T06:46:30Z"
 }
