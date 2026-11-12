@@ -2,6 +2,66 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "pydantic-ai:442401471",
+      "source_id": "pydantic-ai",
+      "product": "Pydantic AI",
+      "category": "framework",
+      "title": "v2.68.0 (2026-11-11)",
+      "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.68.0",
+      "published_at": "2026-11-12T01:56:19Z",
+      "source_body_hash": "c9ab17039a85c65a27d662373fe3143605b6177eac1b2775ddadbc1c552be4cf",
+      "keywords": [
+        "claude",
+        "deepseek",
+        "gemini"
+      ],
+      "excerpt": "## What's Changed ### ⚠️ Compatibility Notes * Note text that looks like an application frame in user and tool content instead of escaping…",
+      "version": "v2.68.0",
+      "release_type": "release",
+      "content_hash": "fc5c3a81af8fcdaeec8b5f47a5555d6789721292ae7b998854bbb82a7af60c92",
+      "first_seen_at": "2026-11-12T07:20:12Z",
+      "updated_at": "2026-11-12T07:20:12Z",
+      "revision_count": 0
+    },
+    {
+      "id": "crewai:442251375",
+      "source_id": "crewai",
+      "product": "CrewAI",
+      "category": "framework",
+      "title": "1.15.40",
+      "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.40",
+      "published_at": "2026-11-11T22:19:53Z",
+      "source_body_hash": "fa42f819ac0989ac6ee6c247f2c64b6231e5d7b3a6036a3f78932269291da797",
+      "keywords": [],
+      "excerpt": "## What's Changed ### Features - Remove chromadb from the embedding function layer. - Add exact historical state lookup by row id. - Wire…",
+      "version": "1.15.40",
+      "release_type": "release",
+      "content_hash": "eb249a82a5c87b24ae49b10d2f68a2c067bbca73ba600fb005d06a8f9231837a",
+      "first_seen_at": "2026-11-12T07:20:12Z",
+      "updated_at": "2026-11-12T07:20:12Z",
+      "revision_count": 0
+    },
+    {
+      "id": "mcp:https://blog.modelcontextprotocol.io/posts/mcp-release-cycle/",
+      "source_id": "mcp",
+      "product": "MCP",
+      "category": "protocol",
+      "title": "A More Predictable Release Cycle for MCP",
+      "url": "https://blog.modelcontextprotocol.io/posts/mcp-release-cycle/",
+      "published_at": "2026-11-11T09:00:00Z",
+      "source_body_hash": "177b3644793bf3c20ea1675b912e5262eaf8a2927073071f2074feb8f4f9b93f",
+      "keywords": [
+        "chat"
+      ],
+      "excerpt": "We’ve spent a lot of time over the past two years talking about ways to improve MCP, add new features and capabilities, and get…",
+      "version": null,
+      "release_type": "feature",
+      "content_hash": "dc1d2be0c324832ff49f6cfd73fca0640070bdc37c22e8ddc953e3ee09249670",
+      "first_seen_at": "2026-11-12T07:20:12Z",
+      "updated_at": "2026-11-12T07:20:12Z",
+      "revision_count": 0
+    },
+    {
       "id": "pydantic-ai:441039588",
       "source_id": "pydantic-ai",
       "product": "Pydantic AI",
@@ -108,6 +168,26 @@
       "content_hash": "37dae8c1baf05d07d2e5b1054a07ff3e16d2f6cc481568555db12e8bf33a43fb",
       "first_seen_at": "2026-11-11T06:37:24Z",
       "updated_at": "2026-11-11T06:37:24Z",
+      "revision_count": 0
+    },
+    {
+      "id": "mcp:https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/",
+      "source_id": "mcp",
+      "product": "MCP",
+      "category": "protocol",
+      "title": "Exploring File Uploads and Downloads in MCP",
+      "url": "https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/",
+      "published_at": "2026-11-10T09:00:00Z",
+      "source_body_hash": "8e3f8cb49524acffeacacdea80449b0a3f6fb1878eff987c01d55b797af631d3",
+      "keywords": [
+        "chat"
+      ],
+      "excerpt": "The Model Context Protocol (MCP) started out as a simple way to connect models to tools, and that principle is still very much at…",
+      "version": null,
+      "release_type": "update",
+      "content_hash": "170866bdc1efd2bf44c1db250a7b60bc820df46b8ded0f8d9d961abf4f24efcb",
+      "first_seen_at": "2026-11-12T07:20:12Z",
+      "updated_at": "2026-11-12T07:20:12Z",
       "revision_count": 0
     },
     {
@@ -232,7 +312,7 @@
       "title": "We’ve launched Claude Fable 5.2 ( claude-fable-5-2 ), built for demanding reasoning and long-horizon agentic work. Claude Mythos 5",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#november-9-2026",
       "published_at": "2026-11-09T00:00:00Z",
-      "source_body_hash": "de660f5ebdddcbfe7d0583ac66a0a0723d22385d14392c213566647412ae8514",
+      "source_body_hash": "8bba08c2d4aa5c40de8a84a91876b637b46c459a5df7a5cca01137c50dfb6d14",
       "keywords": [
         "claude",
         "claude-fable-5-2",
@@ -241,10 +321,10 @@
       "excerpt": "We’ve launched Claude Fable 5.2 ( claude-fable-5-2 ), built for demanding reasoning and long-horizon agentic work. Claude Mythos 5.2 ( claude-mythos-5-2 ) offers the…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "e09c4e6679a9659f52a2098a907db164404f167a3ed5c452b7801ddbbb21a991",
+      "content_hash": "bdff2d10c7c5de111cdfb14ad06ca946970708fa6165a9ead36a5ed7fe4007a5",
       "first_seen_at": "2026-11-10T07:26:27Z",
-      "updated_at": "2026-11-10T07:26:27Z",
-      "revision_count": 0
+      "updated_at": "2026-11-12T07:20:12Z",
+      "revision_count": 1
     },
     {
       "id": "crewai:438475091",
@@ -1300,15 +1380,15 @@
       "title": "The Official Ruby SDK for MCP Reaches Tier 1",
       "url": "https://blog.modelcontextprotocol.io/posts/ruby-sdk-tier-1/",
       "published_at": "2026-10-30T09:00:00Z",
-      "source_body_hash": "d7abf3731ec9a55531d2bbd04fa284db16acf7bc9b1f28d693f96a764af3fe44",
+      "source_body_hash": "e962165da3b8ef8bc58620179d4fc96b034137f6caacda6e918975b40ba65087",
       "keywords": [],
-      "excerpt": "The official Ruby SDK for the Model Context Protocol is now a Tier 1 SDK under the MCP SDK tiering system, with full support…",
+      "excerpt": "The official Ruby SDK for Model Context Protocol is now a Tier 1 SDK, as defined in our SDK tiering system . Ruby is…",
       "version": null,
       "release_type": "update",
-      "content_hash": "cddab1dffc586cf4541d7a63a670adee7c64c0d304f41e9fb5564743593903d1",
+      "content_hash": "999511c4e394bd880e3ad2304eaa87b053544eda4da134bb8f259ece22d1f331",
       "first_seen_at": "2026-10-31T05:52:59Z",
-      "updated_at": "2026-11-03T06:56:04Z",
-      "revision_count": 1
+      "updated_at": "2026-11-12T07:20:12Z",
+      "revision_count": 2
     },
     {
       "id": "claude-agent:428572476",
@@ -8595,19 +8675,19 @@
       "title": "We’ve launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge w",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
       "published_at": "2026-09-01T00:00:00Z",
-      "source_body_hash": "d40c6d56e7f3cbc924e685e81e68d2202868d9c3a410115d402011ad88434e09",
+      "source_body_hash": "8607c241ec2e38d0bdaee473b3d34cb24bbff395e5b0cd2bc6479363ddb5f29a",
       "keywords": [
         "claude",
         "claude-fable-5-1",
         "claude-mythos-5-1"
       ],
-      "excerpt": "We’ve launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research, alongside Claude…",
+      "excerpt": "We’ve launched Claude Fable 5.1 ( claude-fable-5-1 ), the successor to Claude Fable 5 for long-running agentic coding, knowledge work, and research. For Project…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "3b633c85d1ae3cf50ee4223370cd235dc87203d9dfd8d8bafad70c5f262c0403",
+      "content_hash": "b230362d92b61d4d98d8e3c4da6a271bbb40d2316981013de74dba4bfebf9e45",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-11-05T06:56:29Z",
-      "revision_count": 3
+      "updated_at": "2026-11-12T07:20:12Z",
+      "revision_count": 4
     },
     {
       "id": "claude-agent:380018468",
@@ -9766,15 +9846,15 @@
       "title": "The New MCP Roadmap",
       "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
       "published_at": "2026-08-22T09:00:00Z",
-      "source_body_hash": "266dd8eb5cc87b5979c2daf5e9fc63d5e1c069f80c649b357a4fba7fcc34c148",
+      "source_body_hash": "d4d5b5870b0caef386ba58bca64ebad47244c1b4ffa58e4fc5056e28e3fbabc5",
       "keywords": [],
-      "excerpt": "An update on the Model Context Protocol roadmap and focus areas for upcoming specification releases.",
+      "excerpt": "Today we’re excited to publish an updated roadmap for the Model Context Protocol (MCP), covering the next specification release and beyond. It sets the…",
       "version": null,
       "release_type": "feature",
-      "content_hash": "10c724f377fdba75fd5354fd7a52985da60259183aef34499b20a5feeeb60185",
+      "content_hash": "e15f2ff224c19a5dc90be14f28ba1271b0f8b39f4599fff21f5d67bb7a217868",
       "first_seen_at": "2026-10-15T04:06:41Z",
-      "updated_at": "2026-10-15T04:06:41Z",
-      "revision_count": 0
+      "updated_at": "2026-11-12T07:20:12Z",
+      "revision_count": 1
     },
     {
       "id": "microsoft:374717616",
@@ -14380,23 +14460,23 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 31,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 35,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
       "status": "error",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
       "last_success_at": "2026-11-02T06:19:16Z",
       "error": "ValueError: No dated changelog entries found; parser requires review",
       "items_in_window": 16,
@@ -14404,136 +14484,136 @@
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 14,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "openai-agents": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 11,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
-      "items_in_window": 42,
+      "items_in_window": 41,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 40,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
-      "items_in_window": 91,
+      "items_in_window": 90,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
-      "items_in_window": 13,
+      "items_in_window": 12,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
-      "items_in_window": 23,
+      "items_in_window": 22,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
-      "items_in_window": 50,
+      "items_in_window": 49,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 24,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
-      "items_in_window": 2,
+      "items_in_window": 4,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 3,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 88,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 11,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
-      "items_in_window": 34,
+      "items_in_window": 33,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-11-11T06:37:24Z",
-      "last_success_at": "2026-11-11T06:37:24Z",
+      "last_attempt_at": "2026-11-12T07:20:12Z",
+      "last_success_at": "2026-11-12T07:20:12Z",
       "error": null,
       "items_in_window": 6,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
@@ -15394,6 +15474,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-11-11T06:37:24Z",
-  "last_success_at": "2026-11-11T06:37:24Z"
+  "last_attempt_at": "2026-11-12T07:20:12Z",
+  "last_success_at": "2026-11-12T07:20:12Z"
 }
