@@ -2,6 +2,187 @@
   "schema_version": 1,
   "items": [
     {
+      "id": "claude-agent:457573112",
+      "source_id": "claude-agent",
+      "product": "Claude Agent SDK",
+      "category": "framework",
+      "title": "v0.2.189",
+      "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.189",
+      "published_at": "2026-11-25T02:22:26Z",
+      "source_body_hash": "842730171a397df0e45b12745cc40f03f8fabf20dee117783792351f9c69a16d",
+      "keywords": [
+        "claude-agent-sdk"
+      ],
+      "excerpt": "--- **PyPI:** https://pypi.org/project/claude-agent-sdk/0.2.189/ ```bash pip install claude-agent-sdk==0.2.189 ```",
+      "version": "v0.2.189",
+      "release_type": "release",
+      "content_hash": "631337de8f37cdbf96a64de4e16f5e7b80b4f6aaed709fdbd681e653345bdab0",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
+      "id": "adk:457519936",
+      "source_id": "adk",
+      "product": "Google ADK",
+      "category": "framework",
+      "title": "v2.15.1",
+      "url": "https://github.com/google/adk-python/releases/tag/v2.15.1",
+      "published_at": "2026-11-25T01:01:43Z",
+      "source_body_hash": "384d32f3962ee8405e3b481d3ac2cabf1f42cd092fb6a99a9713488d7555caec",
+      "keywords": [
+        "claude"
+      ],
+      "excerpt": "## 2.15.1 (2026-11-24) ### Highlights This release focuses on stability and integration bug fixes across model sampling, agent-to-agent streaming, tool call validation, and instruc…",
+      "version": "v2.15.1",
+      "release_type": "release",
+      "content_hash": "98405184ba39c4312001b49b63da2bf7850dfb8008af1928d7b56b999b10e24b",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
+      "id": "pydantic-ai:457453259",
+      "source_id": "pydantic-ai",
+      "product": "Pydantic AI",
+      "category": "framework",
+      "title": "v2.74.0 (2026-11-24)",
+      "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.74.0",
+      "published_at": "2026-11-24T23:22:14Z",
+      "source_body_hash": "0c692170682b816b58ae6f6ec6180eda41c8e5075e5cd58e01e54880a54b22a3",
+      "keywords": [
+        "claude",
+        "claude-opus-4-5",
+        "gemini",
+        "gpt-5.4",
+        "gpt-6.2",
+        "qwen3"
+      ],
+      "excerpt": "## What's Changed ### 🛡️ Security * GHSA-wm3r-gc4c-q7qg (medium, CVE-2026-136639): Pydantic AI Harness's `PlaywrightBrowser` private-address block did not refuse IPv6 site-local ad…",
+      "version": "v2.74.0",
+      "release_type": "release",
+      "content_hash": "30a5d4b85e18569dd2f1db43a8a32c4229ac48e113106d7d1242868521615380",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
+      "id": "pydantic-ai:457353415",
+      "source_id": "pydantic-ai",
+      "product": "Pydantic AI",
+      "category": "framework",
+      "title": "v1.107.11 (2026-11-24)",
+      "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.107.11",
+      "published_at": "2026-11-24T21:24:35Z",
+      "source_body_hash": "7c042ccbf879d1d958980adbb65867cececaeecf1a65fe286f63835f6ad55979",
+      "keywords": [],
+      "excerpt": "## What's Changed ### 🛡️ Security * GHSA-7xcv-6766-v6v5 (medium, CVE-2026-136643): Online evaluation let OpenTelemetry baggage in the current context set attributes on its `gen_ai.…",
+      "version": "v1.107.11",
+      "release_type": "release",
+      "content_hash": "b2a648f30e32cd7f9fac094d23584c49a0a3bbba9505e5ad83bcd2f2336a1118",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
+      "id": "deepagents:457209607",
+      "source_id": "deepagents",
+      "product": "Deep Agents",
+      "category": "framework",
+      "title": "deepagents-talon==0.1.2",
+      "url": "https://github.com/langchain-ai/deepagents/releases/tag/deepagents-talon%3D%3D0.1.2",
+      "published_at": "2026-11-24T19:04:35Z",
+      "source_body_hash": "4fb86ff0d52b4495baa8029236623eb644f55012d8ae9c157694e3908317c8c8",
+      "keywords": [
+        "claude"
+      ],
+      "excerpt": "### Features - Discover MCP tools on demand. (#7977) - Send messages to local Claude Code sessions through inbox sockets, Codex sessions, and dcode…",
+      "version": "deepagents-talon==0.1.2",
+      "release_type": "release",
+      "content_hash": "d16c72df399f538543dedbbb1e5ed9393811e17055388042e83e9e9027e524fa",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langfuse:457199378",
+      "source_id": "langfuse",
+      "product": "Langfuse",
+      "category": "evaluation",
+      "title": "v4.86.0",
+      "url": "https://github.com/langfuse/langfuse/releases/tag/v4.86.0",
+      "published_at": "2026-11-24T18:54:46Z",
+      "source_body_hash": "7fd3fcee37a812b68adc1b26803d5afeb3cf7f4b1c1db1103c93e17ac494976b",
+      "keywords": [],
+      "excerpt": "## What's Changed * chore(deps): bump msgpackr to 2.1.4 for BullMQ by @nimarb in https://github.com/langfuse/langfuse/pull/20773 * feat(mcp): render charts inline as an MCP App,…",
+      "version": "v4.86.0",
+      "release_type": "release",
+      "content_hash": "1f5191fdb6db430e38756e5dab9f8062f925469110fa40131b54eaae95fd2b56",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
+      "id": "transformers:457003909",
+      "source_id": "transformers",
+      "product": "Transformers",
+      "category": "model",
+      "title": "Patch release v5.24.1",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.1",
+      "published_at": "2026-11-24T16:13:08Z",
+      "source_body_hash": "32107fa8c0599b304823d5ec3ea1199b3468271e496e4a76eede7933585fc9f0",
+      "keywords": [
+        "llama4"
+      ],
+      "excerpt": "# Patch release v5.24.1 A patch to fix a bunch of stuff for vLLM, a few distributed issues, and some model fixes (llama4, dory);…",
+      "version": "v5.24.1",
+      "release_type": "release",
+      "content_hash": "722899958965fc10df05fbf1156749cee824723ad85f0f71a7012d601b7e0ee6",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
+      "id": "langfuse:456816466",
+      "source_id": "langfuse",
+      "product": "Langfuse",
+      "category": "evaluation",
+      "title": "v4.85.0",
+      "url": "https://github.com/langfuse/langfuse/releases/tag/v4.85.0",
+      "published_at": "2026-11-24T13:39:19Z",
+      "source_body_hash": "6e04fd1aee7a5e18a7e95c6ee2694b0ba92e059759eea025d12d19d6e280ff2b",
+      "keywords": [],
+      "excerpt": "## What's Changed ### Features * feat(billing): meter Stripe from the billable units ledger by @Steffen911 in https://github.com/langfuse/langfuse/pull/20526 * feat(web): Use unifi…",
+      "version": "v4.85.0",
+      "release_type": "release",
+      "content_hash": "a9866c8a9deae85a95f2369584254945d414242913345b5f7a4e9e14df4f22ed",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
+      "id": "mcp:https://blog.modelcontextprotocol.io/posts/mcp-turns-two/",
+      "source_id": "mcp",
+      "product": "MCP",
+      "category": "protocol",
+      "title": "Two Years of MCP Builders",
+      "url": "https://blog.modelcontextprotocol.io/posts/mcp-turns-two/",
+      "published_at": "2026-11-24T09:00:00Z",
+      "source_body_hash": "f8a63f2b5b61555ef78a2e09fd1d4ebe911fdc521a1d692e5d70b42c2cf4bf5a",
+      "keywords": [
+        "chat",
+        "chatgpt",
+        "claude"
+      ],
+      "excerpt": "This week, our little open-source project, the Model Context Protocol (MCP), turns two years old . And what better way to mark this occasion…",
+      "version": null,
+      "release_type": "update",
+      "content_hash": "e6ddab2f5b9e4ad5f12bb8dfe704fbdc81efcec709c95838333f5a7e2a2591bc",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
       "id": "ollama:456227993",
       "source_id": "ollama",
       "product": "Ollama",
@@ -105,6 +286,33 @@
       "revision_count": 0
     },
     {
+      "id": "openai:2026-11-24",
+      "source_id": "openai",
+      "product": "OpenAI API",
+      "category": "model",
+      "title": "Update · Model: chat-latest Updated the **chat-latest** snapshot, which points to the latest model available in ChatGPT for Plus,",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "published_at": "2026-11-24T00:00:00Z",
+      "source_body_hash": "39fb5b79c5edb9f80ebb85b08f47a00da5c0669a7f666c56d907be1ee6715973",
+      "keywords": [
+        "chat",
+        "chat-latest",
+        "chatgpt",
+        "gpt-6-astra-healthcare",
+        "gpt-6.1-sol-healthcare",
+        "gpt-6.2",
+        "gpt-6.2-astra-healthcare",
+        "gpt-6.2-sol-healthcare"
+      ],
+      "excerpt": "Update · Model: chat-latest Updated the **chat-latest** snapshot, which points to the latest model available in ChatGPT for Plus, Pro, Business and Enterprise users.…",
+      "version": null,
+      "release_type": "update",
+      "content_hash": "9243d313e5590171717357d33e2e603b9dfd2235173eb0750988467806e1e606",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
+    },
+    {
       "id": "claude-agent:456072317",
       "source_id": "claude-agent",
       "product": "Claude Agent SDK",
@@ -169,22 +377,25 @@
       "source_id": "claude",
       "product": "Claude Platform",
       "category": "model",
-      "title": "We announced the deprecation of the Claude Opus 4.5 model ( claude-opus-4-5-20251101 and claude-opus-4-5 ), with retirement on the",
+      "title": "A fix is live for an undercount of web searches in the List User Activity Preview with links to the API reference available — pres",
       "url": "https://platform.claude.com/docs/en/release-notes/overview#november-23-2026",
       "published_at": "2026-11-23T00:00:00Z",
-      "source_body_hash": "40f9114b6633975e951f5ec796459e5a58c9bb01a21adc45a237260650844391",
+      "source_body_hash": "933678b9c7cac9564c9b39994430586b99992e6e8c50f871083182e20292f75a",
       "keywords": [
+        "chat",
+        "chat_cowork_unified_metrics.sessions.message_count",
+        "chats",
         "claude",
         "claude-opus-4-5",
         "claude-opus-4-5-20251101"
       ],
-      "excerpt": "We announced the deprecation of the Claude Opus 4.5 model ( claude-opus-4-5-20251101 and claude-opus-4-5 ), with retirement on the Claude API scheduled for January…",
+      "excerpt": "A fix is live for an undercount of web searches in the List User Activity Preview with links to the API reference available —…",
       "version": null,
-      "release_type": "deprecation",
-      "content_hash": "03ab3a38875f2ab5fe039ef026b2528c34810ec7a2a779e8cae452725b25be0d",
+      "release_type": "update",
+      "content_hash": "dba61fa4c41126a9db6eee5e8a224e08d9d42216995af6803389f52f83d569dd",
       "first_seen_at": "2026-11-24T10:01:25Z",
-      "updated_at": "2026-11-24T10:01:25Z",
-      "revision_count": 0
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 1
     },
     {
       "id": "transformers:453665914",
@@ -373,6 +584,29 @@
       "content_hash": "b5fece261b22bf810077214ba48a3cb2e2feb6c65efe807b16a7407c1d3bfb7f",
       "first_seen_at": "2026-11-20T07:25:27Z",
       "updated_at": "2026-11-20T07:25:27Z",
+      "revision_count": 0
+    },
+    {
+      "id": "claude:2026-11-20",
+      "source_id": "claude",
+      "product": "Claude Platform",
+      "category": "model",
+      "title": "New rule: A session starts the first time on a UTC day that Claude successfully runs a Bash command, creates a file, or edits a fi",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-20-2026",
+      "published_at": "2026-11-20T00:00:00Z",
+      "source_body_hash": "313c337d484787a126917a8b9a3e532f63799078e04cc89d97036cbd37eacde5",
+      "keywords": [
+        "chat",
+        "chat.distinct_conversation_count",
+        "chats",
+        "claude"
+      ],
+      "excerpt": "New rule: A session starts the first time on a UTC day that Claude successfully runs a Bash command, creates a file, or edits…",
+      "version": null,
+      "release_type": "feature",
+      "content_hash": "9d67f86b85f236245b5088102811311a5c909d2db900a1af4f2949201d8268e3",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
       "revision_count": 0
     },
     {
@@ -2417,6 +2651,24 @@
       "first_seen_at": "2026-11-05T06:56:29Z",
       "updated_at": "2026-11-11T06:37:24Z",
       "revision_count": 1
+    },
+    {
+      "id": "claude:2026-11-04",
+      "source_id": "claude",
+      "product": "Claude Platform",
+      "category": "model",
+      "title": "We’ve added error codes to the SDK so you can handle one cause of an error without parsing the response body. Each API error now c",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview#november-4-2026",
+      "published_at": "2026-11-04T00:00:00Z",
+      "source_body_hash": "060b1cad04b661f65bc80444dc303cd70737d1cf055d78ff6485e791dcf6e778",
+      "keywords": [],
+      "excerpt": "We’ve added error codes to the SDK so you can handle one cause of an error without parsing the response body. Each API error…",
+      "version": null,
+      "release_type": "feature",
+      "content_hash": "fd18affe1d36f43dc6d7f49279f415b0cf6f6d930375d70b1c1fb3fa37602e2f",
+      "first_seen_at": "2026-11-25T08:45:00Z",
+      "updated_at": "2026-11-25T08:45:00Z",
+      "revision_count": 0
     },
     {
       "id": "ollama:433274277",
@@ -16040,23 +16292,23 @@
   "sources": {
     "openai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 31,
+      "items_in_window": 32,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "claude": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 35,
+      "items_in_window": 36,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "gemini": {
       "status": "error",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
       "last_success_at": "2026-11-02T06:19:16Z",
       "error": "ValueError: No dated changelog entries found; parser requires review",
       "items_in_window": 16,
@@ -16064,55 +16316,55 @@
     },
     "transformers": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 15,
+      "items_in_window": 14,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "openai-agents": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 13,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "claude-agent": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 43,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langgraph": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 48,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "deepagents": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 95,
+      "items_in_window": 94,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "adk": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 12,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "microsoft": {
       "status": "error",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
       "last_success_at": "2026-11-17T08:01:54Z",
       "error": "HTTPError: HTTP Error 404: Not Found",
       "items_in_window": 22,
@@ -16120,80 +16372,80 @@
     },
     "pydantic-ai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 45,
+      "items_in_window": 46,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "crewai": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 28,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "mcp": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 3,
+      "items_in_window": 4,
       "coverage": "官方來源目前可回溯範圍，最近 90 日內；不保證完整歷史"
     },
     "a2a": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 0,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "llamaindex": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 2,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "qdrant": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 5,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "langfuse": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 84,
+      "items_in_window": 82,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "promptfoo": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 13,
+      "items_in_window": 12,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "ollama": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
-      "items_in_window": 29,
+      "items_in_window": 28,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
     },
     "vllm": {
       "status": "ok",
-      "last_attempt_at": "2026-11-24T10:01:25Z",
-      "last_success_at": "2026-11-24T10:01:25Z",
+      "last_attempt_at": "2026-11-25T08:45:00Z",
+      "last_success_at": "2026-11-25T08:45:00Z",
       "error": null,
       "items_in_window": 6,
       "coverage": "GitHub Releases，最近 90 日；讀取 1 頁"
@@ -16204,7 +16456,7 @@
       "id": "2026-W47",
       "start": "2026-11-16",
       "end_exclusive": "2026-11-23",
-      "generated_at": "2026-11-23T07:49:29Z",
+      "generated_at": "2026-11-25T08:45:00Z",
       "item_ids": [
         "transformers:453665914",
         "claude-agent:453281673",
@@ -16215,6 +16467,7 @@
         "deepagents:452181034",
         "deepagents:452173144",
         "langgraph:452145289",
+        "claude:2026-11-20",
         "deepagents:452058998",
         "claude-agent:452038374",
         "adk:452036439",
@@ -16303,7 +16556,7 @@
       "id": "2026-W45",
       "start": "2026-11-02",
       "end_exclusive": "2026-11-09",
-      "generated_at": "2026-11-09T06:46:30Z",
+      "generated_at": "2026-11-25T08:45:00Z",
       "item_ids": [
         "openai-agents:438088643",
         "microsoft:436717484",
@@ -16330,6 +16583,7 @@
         "langfuse:433736264",
         "claude-agent:433388468",
         "openai:2026-11-04",
+        "claude:2026-11-04",
         "ollama:433274277",
         "crewai:433067425",
         "langgraph:433053624",
@@ -17153,6 +17407,6 @@
       "undated_ids": []
     }
   ],
-  "last_attempt_at": "2026-11-24T10:01:25Z",
-  "last_success_at": "2026-11-24T10:01:25Z"
+  "last_attempt_at": "2026-11-25T08:45:00Z",
+  "last_success_at": "2026-11-25T08:45:00Z"
 }
